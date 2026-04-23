@@ -6,8 +6,8 @@
       "en": "Explain the core concept of Xác định đúng bài toán và phạm vi in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Xác định đúng bài toán và phạm vi là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Xác định đúng bài toán và phạm vi. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Xác định đúng bài toán và phạm vi is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -23,8 +23,8 @@
       "en": "Describe a step-by-step process to apply Xác định đúng bài toán và phạm vi effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Xác định đúng bài toán và phạm vi có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Xác định đúng bài toán và phạm vi can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -40,8 +40,8 @@
       "en": "What common pitfalls/edge cases appear when applying Xác định đúng bài toán và phạm vi, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Xác định đúng bài toán và phạm vi là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Xác định đúng bài toán và phạm vi include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -57,8 +57,8 @@
       "en": "In larger organizations, how can Xác định đúng bài toán và phạm vi be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Xác định đúng bài toán và phạm vi ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Xác định đúng bài toán và phạm vi in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -74,8 +74,8 @@
       "en": "Explain the core concept of Phân tích nguyên nhân gốc (root cause) in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Phân tích nguyên nhân gốc (root cause) là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Phân tích nguyên nhân gốc (root cause). Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Phân tích nguyên nhân gốc (root cause) is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -91,8 +91,8 @@
       "en": "Describe a step-by-step process to apply Phân tích nguyên nhân gốc (root cause) effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Phân tích nguyên nhân gốc (root cause) có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Phân tích nguyên nhân gốc (root cause) can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -108,8 +108,8 @@
       "en": "What common pitfalls/edge cases appear when applying Phân tích nguyên nhân gốc (root cause), and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Phân tích nguyên nhân gốc (root cause) là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Phân tích nguyên nhân gốc (root cause) include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -125,8 +125,8 @@
       "en": "In larger organizations, how can Phân tích nguyên nhân gốc (root cause) be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Phân tích nguyên nhân gốc (root cause) ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Phân tích nguyên nhân gốc (root cause) in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -142,8 +142,8 @@
       "en": "Explain the core concept of Làm rõ requirement và giả định in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Làm rõ requirement và giả định là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Làm rõ requirement và giả định. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Làm rõ requirement và giả định is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -159,8 +159,8 @@
       "en": "Describe a step-by-step process to apply Làm rõ requirement và giả định effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Làm rõ requirement và giả định có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Làm rõ requirement và giả định can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -176,8 +176,8 @@
       "en": "What common pitfalls/edge cases appear when applying Làm rõ requirement và giả định, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Làm rõ requirement và giả định là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Làm rõ requirement và giả định include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -193,8 +193,8 @@
       "en": "In larger organizations, how can Làm rõ requirement và giả định be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Làm rõ requirement và giả định ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Làm rõ requirement và giả định in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -210,8 +210,8 @@
       "en": "Explain the core concept of Đánh đổi kỹ thuật và business impact in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Đánh đổi kỹ thuật và business impact là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Đánh đổi kỹ thuật và business impact. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Đánh đổi kỹ thuật và business impact is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -227,8 +227,8 @@
       "en": "Describe a step-by-step process to apply Đánh đổi kỹ thuật và business impact effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Đánh đổi kỹ thuật và business impact có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Đánh đổi kỹ thuật và business impact can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -244,8 +244,8 @@
       "en": "What common pitfalls/edge cases appear when applying Đánh đổi kỹ thuật và business impact, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Đánh đổi kỹ thuật và business impact là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Đánh đổi kỹ thuật và business impact include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -261,8 +261,8 @@
       "en": "In larger organizations, how can Đánh đổi kỹ thuật và business impact be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Đánh đổi kỹ thuật và business impact ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Đánh đổi kỹ thuật và business impact in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -278,8 +278,8 @@
       "en": "Explain the core concept of Ưu tiên theo mức độ ảnh hưởng/khẩn cấp in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Ưu tiên theo mức độ ảnh hưởng/khẩn cấp là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Ưu tiên theo mức độ ảnh hưởng/khẩn cấp is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -295,8 +295,8 @@
       "en": "Describe a step-by-step process to apply Ưu tiên theo mức độ ảnh hưởng/khẩn cấp effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Ưu tiên theo mức độ ảnh hưởng/khẩn cấp có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Ưu tiên theo mức độ ảnh hưởng/khẩn cấp can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -312,8 +312,8 @@
       "en": "What common pitfalls/edge cases appear when applying Ưu tiên theo mức độ ảnh hưởng/khẩn cấp, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Ưu tiên theo mức độ ảnh hưởng/khẩn cấp là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Ưu tiên theo mức độ ảnh hưởng/khẩn cấp include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -329,8 +329,8 @@
       "en": "In larger organizations, how can Ưu tiên theo mức độ ảnh hưởng/khẩn cấp be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Ưu tiên theo mức độ ảnh hưởng/khẩn cấp ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Ưu tiên theo mức độ ảnh hưởng/khẩn cấp in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -346,8 +346,8 @@
       "en": "Explain the core concept of Quy trình debug có hệ thống in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Quy trình debug có hệ thống là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Quy trình debug có hệ thống. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Quy trình debug có hệ thống is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -363,8 +363,8 @@
       "en": "Describe a step-by-step process to apply Quy trình debug có hệ thống effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Quy trình debug có hệ thống có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Quy trình debug có hệ thống can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -380,8 +380,8 @@
       "en": "What common pitfalls/edge cases appear when applying Quy trình debug có hệ thống, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Quy trình debug có hệ thống là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Quy trình debug có hệ thống include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -397,8 +397,8 @@
       "en": "In larger organizations, how can Quy trình debug có hệ thống be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Quy trình debug có hệ thống ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Quy trình debug có hệ thống in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -414,8 +414,8 @@
       "en": "Explain the core concept of Đặt giả thuyết và kiểm chứng in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Đặt giả thuyết và kiểm chứng là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Đặt giả thuyết và kiểm chứng. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Đặt giả thuyết và kiểm chứng is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -431,8 +431,8 @@
       "en": "Describe a step-by-step process to apply Đặt giả thuyết và kiểm chứng effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Đặt giả thuyết và kiểm chứng có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Đặt giả thuyết và kiểm chứng can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -448,8 +448,8 @@
       "en": "What common pitfalls/edge cases appear when applying Đặt giả thuyết và kiểm chứng, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Đặt giả thuyết và kiểm chứng là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Đặt giả thuyết và kiểm chứng include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -465,8 +465,8 @@
       "en": "In larger organizations, how can Đặt giả thuyết và kiểm chứng be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Đặt giả thuyết và kiểm chứng ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Đặt giả thuyết và kiểm chứng in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -482,8 +482,8 @@
       "en": "Explain the core concept of Định nghĩa metric đo thành công in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Định nghĩa metric đo thành công là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Định nghĩa metric đo thành công. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Định nghĩa metric đo thành công is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -499,8 +499,8 @@
       "en": "Describe a step-by-step process to apply Định nghĩa metric đo thành công effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Định nghĩa metric đo thành công có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Định nghĩa metric đo thành công can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -516,8 +516,8 @@
       "en": "What common pitfalls/edge cases appear when applying Định nghĩa metric đo thành công, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Định nghĩa metric đo thành công là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Định nghĩa metric đo thành công include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -533,8 +533,8 @@
       "en": "In larger organizations, how can Định nghĩa metric đo thành công be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Định nghĩa metric đo thành công ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Định nghĩa metric đo thành công in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -550,8 +550,8 @@
       "en": "Explain the core concept of Xử lý sự cố production in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Xử lý sự cố production là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Xử lý sự cố production. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Xử lý sự cố production is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -567,8 +567,8 @@
       "en": "Describe a step-by-step process to apply Xử lý sự cố production effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Xử lý sự cố production có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Xử lý sự cố production can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -584,8 +584,8 @@
       "en": "What common pitfalls/edge cases appear when applying Xử lý sự cố production, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Xử lý sự cố production là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Xử lý sự cố production include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -601,8 +601,8 @@
       "en": "In larger organizations, how can Xử lý sự cố production be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Xử lý sự cố production ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Xử lý sự cố production in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -618,8 +618,8 @@
       "en": "Explain the core concept of Giao tiếp với stakeholder khi có vấn đề in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Giao tiếp với stakeholder khi có vấn đề là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Giao tiếp với stakeholder khi có vấn đề. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Giao tiếp với stakeholder khi có vấn đề is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -635,8 +635,8 @@
       "en": "Describe a step-by-step process to apply Giao tiếp với stakeholder khi có vấn đề effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Giao tiếp với stakeholder khi có vấn đề có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Giao tiếp với stakeholder khi có vấn đề can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -652,8 +652,8 @@
       "en": "What common pitfalls/edge cases appear when applying Giao tiếp với stakeholder khi có vấn đề, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Giao tiếp với stakeholder khi có vấn đề là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Giao tiếp với stakeholder khi có vấn đề include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -669,8 +669,8 @@
       "en": "In larger organizations, how can Giao tiếp với stakeholder khi có vấn đề be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Giao tiếp với stakeholder khi có vấn đề ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Giao tiếp với stakeholder khi có vấn đề in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -686,8 +686,8 @@
       "en": "Explain the core concept of Ra quyết định dưới điều kiện thiếu dữ liệu in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Ra quyết định dưới điều kiện thiếu dữ liệu là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Ra quyết định dưới điều kiện thiếu dữ liệu. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Ra quyết định dưới điều kiện thiếu dữ liệu is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -703,8 +703,8 @@
       "en": "Describe a step-by-step process to apply Ra quyết định dưới điều kiện thiếu dữ liệu effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Ra quyết định dưới điều kiện thiếu dữ liệu có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Ra quyết định dưới điều kiện thiếu dữ liệu can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -720,8 +720,8 @@
       "en": "What common pitfalls/edge cases appear when applying Ra quyết định dưới điều kiện thiếu dữ liệu, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Ra quyết định dưới điều kiện thiếu dữ liệu là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Ra quyết định dưới điều kiện thiếu dữ liệu include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -737,8 +737,8 @@
       "en": "In larger organizations, how can Ra quyết định dưới điều kiện thiếu dữ liệu be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Ra quyết định dưới điều kiện thiếu dữ liệu ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Ra quyết định dưới điều kiện thiếu dữ liệu in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -754,8 +754,8 @@
       "en": "Explain the core concept of Đánh giá và giảm thiểu rủi ro in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Đánh giá và giảm thiểu rủi ro là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Đánh giá và giảm thiểu rủi ro. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Đánh giá và giảm thiểu rủi ro is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -771,8 +771,8 @@
       "en": "Describe a step-by-step process to apply Đánh giá và giảm thiểu rủi ro effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Đánh giá và giảm thiểu rủi ro có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Đánh giá và giảm thiểu rủi ro can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -788,8 +788,8 @@
       "en": "What common pitfalls/edge cases appear when applying Đánh giá và giảm thiểu rủi ro, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Đánh giá và giảm thiểu rủi ro là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Đánh giá và giảm thiểu rủi ro include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -805,8 +805,8 @@
       "en": "In larger organizations, how can Đánh giá và giảm thiểu rủi ro be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Đánh giá và giảm thiểu rủi ro ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Đánh giá và giảm thiểu rủi ro in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -822,8 +822,8 @@
       "en": "Explain the core concept of Ước lượng effort và uncertainty in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Ước lượng effort và uncertainty là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Ước lượng effort và uncertainty. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Ước lượng effort và uncertainty is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -839,8 +839,8 @@
       "en": "Describe a step-by-step process to apply Ước lượng effort và uncertainty effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Ước lượng effort và uncertainty có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Ước lượng effort và uncertainty can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -856,8 +856,8 @@
       "en": "What common pitfalls/edge cases appear when applying Ước lượng effort và uncertainty, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Ước lượng effort và uncertainty là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Ước lượng effort và uncertainty include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -873,8 +873,8 @@
       "en": "In larger organizations, how can Ước lượng effort và uncertainty be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Ước lượng effort và uncertainty ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Ước lượng effort và uncertainty in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -890,8 +890,8 @@
       "en": "Explain the core concept of Tư duy hệ thống end-to-end in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Tư duy hệ thống end-to-end là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Tư duy hệ thống end-to-end. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Tư duy hệ thống end-to-end is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -907,8 +907,8 @@
       "en": "Describe a step-by-step process to apply Tư duy hệ thống end-to-end effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Tư duy hệ thống end-to-end có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Tư duy hệ thống end-to-end can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -924,8 +924,8 @@
       "en": "What common pitfalls/edge cases appear when applying Tư duy hệ thống end-to-end, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Tư duy hệ thống end-to-end là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Tư duy hệ thống end-to-end include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -941,8 +941,8 @@
       "en": "In larger organizations, how can Tư duy hệ thống end-to-end be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Tư duy hệ thống end-to-end ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Tư duy hệ thống end-to-end in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -958,8 +958,8 @@
       "en": "Explain the core concept of Phân tích bottleneck hiệu năng in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Phân tích bottleneck hiệu năng là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Phân tích bottleneck hiệu năng. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Phân tích bottleneck hiệu năng is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -975,8 +975,8 @@
       "en": "Describe a step-by-step process to apply Phân tích bottleneck hiệu năng effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Phân tích bottleneck hiệu năng có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Phân tích bottleneck hiệu năng can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -992,8 +992,8 @@
       "en": "What common pitfalls/edge cases appear when applying Phân tích bottleneck hiệu năng, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Phân tích bottleneck hiệu năng là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Phân tích bottleneck hiệu năng include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1009,8 +1009,8 @@
       "en": "In larger organizations, how can Phân tích bottleneck hiệu năng be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Phân tích bottleneck hiệu năng ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Phân tích bottleneck hiệu năng in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1026,8 +1026,8 @@
       "en": "Explain the core concept of Mở rộng hệ thống theo tải in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Mở rộng hệ thống theo tải là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Mở rộng hệ thống theo tải. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Mở rộng hệ thống theo tải is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1043,8 +1043,8 @@
       "en": "Describe a step-by-step process to apply Mở rộng hệ thống theo tải effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Mở rộng hệ thống theo tải có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Mở rộng hệ thống theo tải can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1060,8 +1060,8 @@
       "en": "What common pitfalls/edge cases appear when applying Mở rộng hệ thống theo tải, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Mở rộng hệ thống theo tải là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Mở rộng hệ thống theo tải include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1077,8 +1077,8 @@
       "en": "In larger organizations, how can Mở rộng hệ thống theo tải be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Mở rộng hệ thống theo tải ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Mở rộng hệ thống theo tải in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1094,8 +1094,8 @@
       "en": "Explain the core concept of Thiết kế chịu lỗi và rollback in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Thiết kế chịu lỗi và rollback là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Thiết kế chịu lỗi và rollback. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Thiết kế chịu lỗi và rollback is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1111,8 +1111,8 @@
       "en": "Describe a step-by-step process to apply Thiết kế chịu lỗi và rollback effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Thiết kế chịu lỗi và rollback có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Thiết kế chịu lỗi và rollback can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1128,8 +1128,8 @@
       "en": "What common pitfalls/edge cases appear when applying Thiết kế chịu lỗi và rollback, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Thiết kế chịu lỗi và rollback là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Thiết kế chịu lỗi và rollback include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1145,8 +1145,8 @@
       "en": "In larger organizations, how can Thiết kế chịu lỗi và rollback be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Thiết kế chịu lỗi và rollback ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Thiết kế chịu lỗi và rollback in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1162,8 +1162,8 @@
       "en": "Explain the core concept of Xử lý vấn đề chất lượng dữ liệu in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Xử lý vấn đề chất lượng dữ liệu là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Xử lý vấn đề chất lượng dữ liệu. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Xử lý vấn đề chất lượng dữ liệu is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1179,8 +1179,8 @@
       "en": "Describe a step-by-step process to apply Xử lý vấn đề chất lượng dữ liệu effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Xử lý vấn đề chất lượng dữ liệu có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Xử lý vấn đề chất lượng dữ liệu can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1196,8 +1196,8 @@
       "en": "What common pitfalls/edge cases appear when applying Xử lý vấn đề chất lượng dữ liệu, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Xử lý vấn đề chất lượng dữ liệu là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Xử lý vấn đề chất lượng dữ liệu include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1213,8 +1213,8 @@
       "en": "In larger organizations, how can Xử lý vấn đề chất lượng dữ liệu be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Xử lý vấn đề chất lượng dữ liệu ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Xử lý vấn đề chất lượng dữ liệu in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1230,8 +1230,8 @@
       "en": "Explain the core concept of A/B test và thử nghiệm có kiểm soát in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "A/B test và thử nghiệm có kiểm soát là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của A/B test và thử nghiệm có kiểm soát. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "A/B test và thử nghiệm có kiểm soát is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1247,8 +1247,8 @@
       "en": "Describe a step-by-step process to apply A/B test và thử nghiệm có kiểm soát effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của A/B test và thử nghiệm có kiểm soát có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of A/B test và thử nghiệm có kiểm soát can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1264,8 +1264,8 @@
       "en": "What common pitfalls/edge cases appear when applying A/B test và thử nghiệm có kiểm soát, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với A/B test và thử nghiệm có kiểm soát là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in A/B test và thử nghiệm có kiểm soát include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1281,8 +1281,8 @@
       "en": "In larger organizations, how can A/B test và thử nghiệm có kiểm soát be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá A/B test và thử nghiệm có kiểm soát ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá A/B test và thử nghiệm có kiểm soát in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1298,8 +1298,8 @@
       "en": "Explain the core concept of Viết postmortem và hành động phòng ngừa in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Viết postmortem và hành động phòng ngừa là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Viết postmortem và hành động phòng ngừa. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Viết postmortem và hành động phòng ngừa is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1315,8 +1315,8 @@
       "en": "Describe a step-by-step process to apply Viết postmortem và hành động phòng ngừa effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Viết postmortem và hành động phòng ngừa có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Viết postmortem và hành động phòng ngừa can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1332,8 +1332,8 @@
       "en": "What common pitfalls/edge cases appear when applying Viết postmortem và hành động phòng ngừa, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Viết postmortem và hành động phòng ngừa là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Viết postmortem và hành động phòng ngừa include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1349,8 +1349,8 @@
       "en": "In larger organizations, how can Viết postmortem và hành động phòng ngừa be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Viết postmortem và hành động phòng ngừa ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Viết postmortem và hành động phòng ngừa in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1366,8 +1366,8 @@
       "en": "Explain the core concept of Phối hợp đa nhóm để giải quyết vấn đề in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Phối hợp đa nhóm để giải quyết vấn đề là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Phối hợp đa nhóm để giải quyết vấn đề. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Phối hợp đa nhóm để giải quyết vấn đề is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1383,8 +1383,8 @@
       "en": "Describe a step-by-step process to apply Phối hợp đa nhóm để giải quyết vấn đề effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Phối hợp đa nhóm để giải quyết vấn đề có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Phối hợp đa nhóm để giải quyết vấn đề can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1400,8 +1400,8 @@
       "en": "What common pitfalls/edge cases appear when applying Phối hợp đa nhóm để giải quyết vấn đề, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Phối hợp đa nhóm để giải quyết vấn đề là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Phối hợp đa nhóm để giải quyết vấn đề include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1417,8 +1417,8 @@
       "en": "In larger organizations, how can Phối hợp đa nhóm để giải quyết vấn đề be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Phối hợp đa nhóm để giải quyết vấn đề ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Phối hợp đa nhóm để giải quyết vấn đề in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1434,8 +1434,8 @@
       "en": "Explain the core concept of Ưu tiên theo customer impact in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Ưu tiên theo customer impact là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Ưu tiên theo customer impact. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Ưu tiên theo customer impact is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1451,8 +1451,8 @@
       "en": "Describe a step-by-step process to apply Ưu tiên theo customer impact effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Ưu tiên theo customer impact có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Ưu tiên theo customer impact can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1468,8 +1468,8 @@
       "en": "What common pitfalls/edge cases appear when applying Ưu tiên theo customer impact, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Ưu tiên theo customer impact là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Ưu tiên theo customer impact include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1485,8 +1485,8 @@
       "en": "In larger organizations, how can Ưu tiên theo customer impact be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Ưu tiên theo customer impact ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Ưu tiên theo customer impact in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1502,8 +1502,8 @@
       "en": "Explain the core concept of Xử lý technical debt có chiến lược in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Xử lý technical debt có chiến lược là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Xử lý technical debt có chiến lược. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Xử lý technical debt có chiến lược is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1519,8 +1519,8 @@
       "en": "Describe a step-by-step process to apply Xử lý technical debt có chiến lược effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Xử lý technical debt có chiến lược có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Xử lý technical debt có chiến lược can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1536,8 +1536,8 @@
       "en": "What common pitfalls/edge cases appear when applying Xử lý technical debt có chiến lược, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Xử lý technical debt có chiến lược là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Xử lý technical debt có chiến lược include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1553,8 +1553,8 @@
       "en": "In larger organizations, how can Xử lý technical debt có chiến lược be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Xử lý technical debt có chiến lược ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Xử lý technical debt có chiến lược in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1570,8 +1570,8 @@
       "en": "Explain the core concept of Cải tiến quy trình sau mỗi incident in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cải tiến quy trình sau mỗi incident là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Cải tiến quy trình sau mỗi incident. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Cải tiến quy trình sau mỗi incident is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1587,8 +1587,8 @@
       "en": "Describe a step-by-step process to apply Cải tiến quy trình sau mỗi incident effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Cải tiến quy trình sau mỗi incident có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Cải tiến quy trình sau mỗi incident can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1604,8 +1604,8 @@
       "en": "What common pitfalls/edge cases appear when applying Cải tiến quy trình sau mỗi incident, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Cải tiến quy trình sau mỗi incident là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Cải tiến quy trình sau mỗi incident include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1621,8 +1621,8 @@
       "en": "In larger organizations, how can Cải tiến quy trình sau mỗi incident be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Cải tiến quy trình sau mỗi incident ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Cải tiến quy trình sau mỗi incident in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1638,8 +1638,8 @@
       "en": "Explain the core concept of Dẫn dắt giải quyết vấn đề phức tạp in practical problem solving."
     },
     "answer": {
-      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Dẫn dắt giải quyết vấn đề phức tạp là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Dẫn dắt giải quyết vấn đề phức tạp. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Dẫn dắt giải quyết vấn đề phức tạp is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1655,8 +1655,8 @@
       "en": "Describe a step-by-step process to apply Dẫn dắt giải quyết vấn đề phức tạp effectively."
     },
     "answer": {
-      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Cơ chế của Dẫn dắt giải quyết vấn đề phức tạp có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Dẫn dắt giải quyết vấn đề phức tạp can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1672,8 +1672,8 @@
       "en": "What common pitfalls/edge cases appear when applying Dẫn dắt giải quyết vấn đề phức tạp, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Lỗi thường gặp với Dẫn dắt giải quyết vấn đề phức tạp là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Dẫn dắt giải quyết vấn đề phức tạp include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1689,8 +1689,8 @@
       "en": "In larger organizations, how can Dẫn dắt giải quyết vấn đề phức tạp be standardized for sustainability and measurable outcomes?"
     },
     "answer": {
-      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
-      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+      "vi": "Để áp dụng Trong tổ chức lớn, chuẩn hoá Dẫn dắt giải quyết vấn đề phức tạp ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Trong tổ chức lớn, chuẩn hoá Dẫn dắt giải quyết vấn đề phức tạp in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [

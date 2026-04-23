@@ -6,8 +6,8 @@
       "en": "Explain the core concept of Kiến trúc Angular: module, component, service in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Kiến trúc Angular: module, component, service. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Kiến trúc Angular: module, component, service. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Kiến trúc Angular: module, component, service là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Kiến trúc Angular: module, component, service. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Kiến trúc Angular: module, component, service is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -23,8 +23,8 @@
       "en": "Describe the internal mechanism of Kiến trúc Angular: module, component, service and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Kiến trúc Angular: module, component, service. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Kiến trúc Angular: module, component, service. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Kiến trúc Angular: module, component, service có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Kiến trúc Angular: module, component, service can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -40,8 +40,8 @@
       "en": "What are common production pitfalls/edge cases of Kiến trúc Angular: module, component, service, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Kiến trúc Angular: module, component, service. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Kiến trúc Angular: module, component, service. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Kiến trúc Angular: module, component, service là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Kiến trúc Angular: module, component, service include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -57,8 +57,8 @@
       "en": "In large projects, how should Kiến trúc Angular: module, component, service be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Kiến trúc Angular: module, component, service. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Kiến trúc Angular: module, component, service. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Kiến trúc Angular: module, component, service ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Kiến trúc Angular: module, component, service in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -74,8 +74,8 @@
       "en": "Explain the core concept of Change detection, zone.js và OnPush in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Change detection, zone.js và OnPush. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Change detection, zone.js và OnPush. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Change detection, zone.js và OnPush là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Change detection, zone.js và OnPush. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Change detection, zone.js và OnPush is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -91,8 +91,8 @@
       "en": "Describe the internal mechanism of Change detection, zone.js và OnPush and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Change detection, zone.js và OnPush. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Change detection, zone.js và OnPush. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Change detection, zone.js và OnPush có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Change detection, zone.js và OnPush can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -108,8 +108,8 @@
       "en": "What are common production pitfalls/edge cases of Change detection, zone.js và OnPush, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Change detection, zone.js và OnPush. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Change detection, zone.js và OnPush. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Change detection, zone.js và OnPush là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Change detection, zone.js và OnPush include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -125,8 +125,8 @@
       "en": "In large projects, how should Change detection, zone.js và OnPush be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Change detection, zone.js và OnPush. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Change detection, zone.js và OnPush. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Change detection, zone.js và OnPush ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Change detection, zone.js và OnPush in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -142,8 +142,8 @@
       "en": "Explain the core concept of Dependency Injection, injector tree, providers in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Dependency Injection, injector tree, providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Dependency Injection, injector tree, providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Dependency Injection, injector tree, providers là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Dependency Injection, injector tree, providers. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Dependency Injection, injector tree, providers is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -159,8 +159,8 @@
       "en": "Describe the internal mechanism of Dependency Injection, injector tree, providers and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Dependency Injection, injector tree, providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Dependency Injection, injector tree, providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Dependency Injection, injector tree, providers có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Dependency Injection, injector tree, providers can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -176,8 +176,8 @@
       "en": "What are common production pitfalls/edge cases of Dependency Injection, injector tree, providers, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Dependency Injection, injector tree, providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Dependency Injection, injector tree, providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Dependency Injection, injector tree, providers là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Dependency Injection, injector tree, providers include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -193,8 +193,8 @@
       "en": "In large projects, how should Dependency Injection, injector tree, providers be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Dependency Injection, injector tree, providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Dependency Injection, injector tree, providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Dependency Injection, injector tree, providers ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Dependency Injection, injector tree, providers in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -210,8 +210,8 @@
       "en": "Explain the core concept of Standalone components và bootstrapApplication in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Standalone components và bootstrapApplication. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Standalone components và bootstrapApplication. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Standalone components và bootstrapApplication là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Standalone components và bootstrapApplication. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Standalone components và bootstrapApplication is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -227,8 +227,8 @@
       "en": "Describe the internal mechanism of Standalone components và bootstrapApplication and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Standalone components và bootstrapApplication. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Standalone components và bootstrapApplication. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Standalone components và bootstrapApplication có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Standalone components và bootstrapApplication can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -244,8 +244,8 @@
       "en": "What are common production pitfalls/edge cases of Standalone components và bootstrapApplication, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Standalone components và bootstrapApplication. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Standalone components và bootstrapApplication. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Standalone components và bootstrapApplication là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Standalone components và bootstrapApplication include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -261,8 +261,8 @@
       "en": "In large projects, how should Standalone components và bootstrapApplication be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Standalone components và bootstrapApplication. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Standalone components và bootstrapApplication. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Standalone components và bootstrapApplication ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Standalone components và bootstrapApplication in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -278,8 +278,8 @@
       "en": "Explain the core concept of Angular Signals: signal, computed, effect in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Angular Signals: signal, computed, effect. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular Signals: signal, computed, effect. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Angular Signals: signal, computed, effect là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Angular Signals: signal, computed, effect. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Angular Signals: signal, computed, effect is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -295,8 +295,8 @@
       "en": "Describe the internal mechanism of Angular Signals: signal, computed, effect and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Angular Signals: signal, computed, effect. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular Signals: signal, computed, effect. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Angular Signals: signal, computed, effect có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Angular Signals: signal, computed, effect can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -312,8 +312,8 @@
       "en": "What are common production pitfalls/edge cases of Angular Signals: signal, computed, effect, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Angular Signals: signal, computed, effect. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular Signals: signal, computed, effect. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Angular Signals: signal, computed, effect là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Angular Signals: signal, computed, effect include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -329,8 +329,8 @@
       "en": "In large projects, how should Angular Signals: signal, computed, effect be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Angular Signals: signal, computed, effect. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular Signals: signal, computed, effect. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Angular Signals: signal, computed, effect ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Angular Signals: signal, computed, effect in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -346,8 +346,8 @@
       "en": "Explain the core concept of RxJS cơ bản: Observable, Observer, Subscription in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: RxJS cơ bản: Observable, Observer, Subscription. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: RxJS cơ bản: Observable, Observer, Subscription. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "RxJS cơ bản: Observable, Observer, Subscription là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của RxJS cơ bản: Observable, Observer, Subscription. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "RxJS cơ bản: Observable, Observer, Subscription is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -363,8 +363,8 @@
       "en": "Describe the internal mechanism of RxJS cơ bản: Observable, Observer, Subscription and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: RxJS cơ bản: Observable, Observer, Subscription. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: RxJS cơ bản: Observable, Observer, Subscription. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của RxJS cơ bản: Observable, Observer, Subscription có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of RxJS cơ bản: Observable, Observer, Subscription can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -380,8 +380,8 @@
       "en": "What are common production pitfalls/edge cases of RxJS cơ bản: Observable, Observer, Subscription, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: RxJS cơ bản: Observable, Observer, Subscription. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: RxJS cơ bản: Observable, Observer, Subscription. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với RxJS cơ bản: Observable, Observer, Subscription là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in RxJS cơ bản: Observable, Observer, Subscription include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -397,8 +397,8 @@
       "en": "In large projects, how should RxJS cơ bản: Observable, Observer, Subscription be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: RxJS cơ bản: Observable, Observer, Subscription. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: RxJS cơ bản: Observable, Observer, Subscription. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng RxJS cơ bản: Observable, Observer, Subscription ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply RxJS cơ bản: Observable, Observer, Subscription in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -414,8 +414,8 @@
       "en": "Explain the core concept of Operators: map, switchMap, mergeMap, concatMap in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Operators: map, switchMap, mergeMap, concatMap. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Operators: map, switchMap, mergeMap, concatMap. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Operators: map, switchMap, mergeMap, concatMap là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Operators: map, switchMap, mergeMap, concatMap. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Operators: map, switchMap, mergeMap, concatMap is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -431,8 +431,8 @@
       "en": "Describe the internal mechanism of Operators: map, switchMap, mergeMap, concatMap and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Operators: map, switchMap, mergeMap, concatMap. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Operators: map, switchMap, mergeMap, concatMap. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Operators: map, switchMap, mergeMap, concatMap có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Operators: map, switchMap, mergeMap, concatMap can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -448,8 +448,8 @@
       "en": "What are common production pitfalls/edge cases of Operators: map, switchMap, mergeMap, concatMap, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Operators: map, switchMap, mergeMap, concatMap. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Operators: map, switchMap, mergeMap, concatMap. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Operators: map, switchMap, mergeMap, concatMap là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Operators: map, switchMap, mergeMap, concatMap include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -465,8 +465,8 @@
       "en": "In large projects, how should Operators: map, switchMap, mergeMap, concatMap be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Operators: map, switchMap, mergeMap, concatMap. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Operators: map, switchMap, mergeMap, concatMap. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Operators: map, switchMap, mergeMap, concatMap ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Operators: map, switchMap, mergeMap, concatMap in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -482,8 +482,8 @@
       "en": "Explain the core concept of Quản lý state với service/store/signals in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Quản lý state với service/store/signals. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Quản lý state với service/store/signals. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Quản lý state với service/store/signals là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Quản lý state với service/store/signals. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Quản lý state với service/store/signals is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -499,8 +499,8 @@
       "en": "Describe the internal mechanism of Quản lý state với service/store/signals and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Quản lý state với service/store/signals. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Quản lý state với service/store/signals. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Quản lý state với service/store/signals có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Quản lý state với service/store/signals can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -516,8 +516,8 @@
       "en": "What are common production pitfalls/edge cases of Quản lý state với service/store/signals, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Quản lý state với service/store/signals. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Quản lý state với service/store/signals. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Quản lý state với service/store/signals là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Quản lý state với service/store/signals include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -533,8 +533,8 @@
       "en": "In large projects, how should Quản lý state với service/store/signals be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Quản lý state với service/store/signals. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Quản lý state với service/store/signals. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Quản lý state với service/store/signals ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Quản lý state với service/store/signals in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -550,8 +550,8 @@
       "en": "Explain the core concept of Template-driven forms in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Template-driven forms. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Template-driven forms. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Template-driven forms là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Template-driven forms. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Template-driven forms is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -567,8 +567,8 @@
       "en": "Describe the internal mechanism of Template-driven forms and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Template-driven forms. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Template-driven forms. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Template-driven forms có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Template-driven forms can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -584,8 +584,8 @@
       "en": "What are common production pitfalls/edge cases of Template-driven forms, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Template-driven forms. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Template-driven forms. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Template-driven forms là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Template-driven forms include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -601,8 +601,8 @@
       "en": "In large projects, how should Template-driven forms be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Template-driven forms. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Template-driven forms. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Template-driven forms ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Template-driven forms in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -618,8 +618,8 @@
       "en": "Explain the core concept of Reactive forms, FormBuilder, validators in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Reactive forms, FormBuilder, validators. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Reactive forms, FormBuilder, validators. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Reactive forms, FormBuilder, validators là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Reactive forms, FormBuilder, validators. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Reactive forms, FormBuilder, validators is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -635,8 +635,8 @@
       "en": "Describe the internal mechanism of Reactive forms, FormBuilder, validators and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Reactive forms, FormBuilder, validators. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Reactive forms, FormBuilder, validators. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Reactive forms, FormBuilder, validators có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Reactive forms, FormBuilder, validators can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -652,8 +652,8 @@
       "en": "What are common production pitfalls/edge cases of Reactive forms, FormBuilder, validators, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Reactive forms, FormBuilder, validators. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Reactive forms, FormBuilder, validators. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Reactive forms, FormBuilder, validators là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Reactive forms, FormBuilder, validators include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -669,8 +669,8 @@
       "en": "In large projects, how should Reactive forms, FormBuilder, validators be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Reactive forms, FormBuilder, validators. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Reactive forms, FormBuilder, validators. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Reactive forms, FormBuilder, validators ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Reactive forms, FormBuilder, validators in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -686,8 +686,8 @@
       "en": "Explain the core concept of Router, lazy loading, guards, resolvers in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Router, lazy loading, guards, resolvers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Router, lazy loading, guards, resolvers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Router, lazy loading, guards, resolvers là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Router, lazy loading, guards, resolvers. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Router, lazy loading, guards, resolvers is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -703,8 +703,8 @@
       "en": "Describe the internal mechanism of Router, lazy loading, guards, resolvers and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Router, lazy loading, guards, resolvers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Router, lazy loading, guards, resolvers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Router, lazy loading, guards, resolvers có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Router, lazy loading, guards, resolvers can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -720,8 +720,8 @@
       "en": "What are common production pitfalls/edge cases of Router, lazy loading, guards, resolvers, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Router, lazy loading, guards, resolvers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Router, lazy loading, guards, resolvers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Router, lazy loading, guards, resolvers là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Router, lazy loading, guards, resolvers include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -737,8 +737,8 @@
       "en": "In large projects, how should Router, lazy loading, guards, resolvers be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Router, lazy loading, guards, resolvers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Router, lazy loading, guards, resolvers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Router, lazy loading, guards, resolvers ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Router, lazy loading, guards, resolvers in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -754,8 +754,8 @@
       "en": "Explain the core concept of HttpClient, interceptors, error handling in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: HttpClient, interceptors, error handling. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: HttpClient, interceptors, error handling. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "HttpClient, interceptors, error handling là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của HttpClient, interceptors, error handling. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "HttpClient, interceptors, error handling is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -771,8 +771,8 @@
       "en": "Describe the internal mechanism of HttpClient, interceptors, error handling and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: HttpClient, interceptors, error handling. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: HttpClient, interceptors, error handling. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của HttpClient, interceptors, error handling có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of HttpClient, interceptors, error handling can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -788,8 +788,8 @@
       "en": "What are common production pitfalls/edge cases of HttpClient, interceptors, error handling, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: HttpClient, interceptors, error handling. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: HttpClient, interceptors, error handling. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với HttpClient, interceptors, error handling là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in HttpClient, interceptors, error handling include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -805,8 +805,8 @@
       "en": "In large projects, how should HttpClient, interceptors, error handling be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: HttpClient, interceptors, error handling. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: HttpClient, interceptors, error handling. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng HttpClient, interceptors, error handling ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply HttpClient, interceptors, error handling in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -822,8 +822,8 @@
       "en": "Explain the core concept of Lifecycle hooks và cleanup in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Lifecycle hooks và cleanup. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Lifecycle hooks và cleanup. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lifecycle hooks và cleanup là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Lifecycle hooks và cleanup. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Lifecycle hooks và cleanup is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -839,8 +839,8 @@
       "en": "Describe the internal mechanism of Lifecycle hooks và cleanup and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Lifecycle hooks và cleanup. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Lifecycle hooks và cleanup. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Lifecycle hooks và cleanup có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Lifecycle hooks và cleanup can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -856,8 +856,8 @@
       "en": "What are common production pitfalls/edge cases of Lifecycle hooks và cleanup, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Lifecycle hooks và cleanup. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Lifecycle hooks và cleanup. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Lifecycle hooks và cleanup là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Lifecycle hooks và cleanup include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -873,8 +873,8 @@
       "en": "In large projects, how should Lifecycle hooks và cleanup be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Lifecycle hooks và cleanup. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Lifecycle hooks và cleanup. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Lifecycle hooks và cleanup ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Lifecycle hooks và cleanup in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -890,8 +890,8 @@
       "en": "Explain the core concept of Hiệu năng: trackBy, memoization, CD strategy in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Hiệu năng: trackBy, memoization, CD strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Hiệu năng: trackBy, memoization, CD strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Hiệu năng: trackBy, memoization, CD strategy là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Hiệu năng: trackBy, memoization, CD strategy. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Hiệu năng: trackBy, memoization, CD strategy is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -907,8 +907,8 @@
       "en": "Describe the internal mechanism of Hiệu năng: trackBy, memoization, CD strategy and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Hiệu năng: trackBy, memoization, CD strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Hiệu năng: trackBy, memoization, CD strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Hiệu năng: trackBy, memoization, CD strategy có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Hiệu năng: trackBy, memoization, CD strategy can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -924,8 +924,8 @@
       "en": "What are common production pitfalls/edge cases of Hiệu năng: trackBy, memoization, CD strategy, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Hiệu năng: trackBy, memoization, CD strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Hiệu năng: trackBy, memoization, CD strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Hiệu năng: trackBy, memoization, CD strategy là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Hiệu năng: trackBy, memoization, CD strategy include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -941,8 +941,8 @@
       "en": "In large projects, how should Hiệu năng: trackBy, memoization, CD strategy be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Hiệu năng: trackBy, memoization, CD strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Hiệu năng: trackBy, memoization, CD strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Hiệu năng: trackBy, memoization, CD strategy ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Hiệu năng: trackBy, memoization, CD strategy in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -958,8 +958,8 @@
       "en": "Explain the core concept of Unit test component/service và TestBed in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Unit test component/service và TestBed. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Unit test component/service và TestBed. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Unit test component/service và TestBed là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Unit test component/service và TestBed. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Unit test component/service và TestBed is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -975,8 +975,8 @@
       "en": "Describe the internal mechanism of Unit test component/service và TestBed and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Unit test component/service và TestBed. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Unit test component/service và TestBed. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Unit test component/service và TestBed có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Unit test component/service và TestBed can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -992,8 +992,8 @@
       "en": "What are common production pitfalls/edge cases of Unit test component/service và TestBed, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Unit test component/service và TestBed. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Unit test component/service và TestBed. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Unit test component/service và TestBed là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Unit test component/service và TestBed include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1009,8 +1009,8 @@
       "en": "In large projects, how should Unit test component/service và TestBed be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Unit test component/service và TestBed. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Unit test component/service và TestBed. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Unit test component/service và TestBed ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Unit test component/service và TestBed in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1026,8 +1026,8 @@
       "en": "Explain the core concept of E2E, integration testing, test strategy in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: E2E, integration testing, test strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: E2E, integration testing, test strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "E2E, integration testing, test strategy là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của E2E, integration testing, test strategy. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "E2E, integration testing, test strategy is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1043,8 +1043,8 @@
       "en": "Describe the internal mechanism of E2E, integration testing, test strategy and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: E2E, integration testing, test strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: E2E, integration testing, test strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của E2E, integration testing, test strategy có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of E2E, integration testing, test strategy can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1060,8 +1060,8 @@
       "en": "What are common production pitfalls/edge cases of E2E, integration testing, test strategy, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: E2E, integration testing, test strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: E2E, integration testing, test strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với E2E, integration testing, test strategy là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in E2E, integration testing, test strategy include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1077,8 +1077,8 @@
       "en": "In large projects, how should E2E, integration testing, test strategy be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: E2E, integration testing, test strategy. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: E2E, integration testing, test strategy. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng E2E, integration testing, test strategy ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply E2E, integration testing, test strategy in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1094,8 +1094,8 @@
       "en": "Explain the core concept of Security: XSS, CSP, sanitizer, auth in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Security: XSS, CSP, sanitizer, auth. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Security: XSS, CSP, sanitizer, auth. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Security: XSS, CSP, sanitizer, auth là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Security: XSS, CSP, sanitizer, auth. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Security: XSS, CSP, sanitizer, auth is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1111,8 +1111,8 @@
       "en": "Describe the internal mechanism of Security: XSS, CSP, sanitizer, auth and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Security: XSS, CSP, sanitizer, auth. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Security: XSS, CSP, sanitizer, auth. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Security: XSS, CSP, sanitizer, auth có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Security: XSS, CSP, sanitizer, auth can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1128,8 +1128,8 @@
       "en": "What are common production pitfalls/edge cases of Security: XSS, CSP, sanitizer, auth, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Security: XSS, CSP, sanitizer, auth. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Security: XSS, CSP, sanitizer, auth. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Security: XSS, CSP, sanitizer, auth là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Security: XSS, CSP, sanitizer, auth include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1145,8 +1145,8 @@
       "en": "In large projects, how should Security: XSS, CSP, sanitizer, auth be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Security: XSS, CSP, sanitizer, auth. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Security: XSS, CSP, sanitizer, auth. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Security: XSS, CSP, sanitizer, auth ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Security: XSS, CSP, sanitizer, auth in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1162,8 +1162,8 @@
       "en": "Explain the core concept of Angular SSR/hydration in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Angular SSR/hydration. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular SSR/hydration. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Angular SSR/hydration là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Angular SSR/hydration. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Angular SSR/hydration is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1179,8 +1179,8 @@
       "en": "Describe the internal mechanism of Angular SSR/hydration and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Angular SSR/hydration. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular SSR/hydration. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Angular SSR/hydration có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Angular SSR/hydration can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1196,8 +1196,8 @@
       "en": "What are common production pitfalls/edge cases of Angular SSR/hydration, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Angular SSR/hydration. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular SSR/hydration. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Angular SSR/hydration là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Angular SSR/hydration include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1213,8 +1213,8 @@
       "en": "In large projects, how should Angular SSR/hydration be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Angular SSR/hydration. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Angular SSR/hydration. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Angular SSR/hydration ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Angular SSR/hydration in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1230,8 +1230,8 @@
       "en": "Explain the core concept of PWA và service worker trong Angular in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: PWA và service worker trong Angular. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: PWA và service worker trong Angular. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "PWA và service worker là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của PWA và service worker. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "PWA và service worker is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1247,8 +1247,8 @@
       "en": "Describe the internal mechanism of PWA và service worker trong Angular and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: PWA và service worker trong Angular. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: PWA và service worker trong Angular. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của PWA và service worker có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of PWA và service worker can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1264,8 +1264,8 @@
       "en": "What are common production pitfalls/edge cases of PWA và service worker trong Angular, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: PWA và service worker trong Angular. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: PWA và service worker trong Angular. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với PWA và service worker là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in PWA và service worker include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1281,8 +1281,8 @@
       "en": "In large projects, how should PWA và service worker trong Angular be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: PWA và service worker trong Angular. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: PWA và service worker trong Angular. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng PWA và service worker ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply PWA và service worker in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1298,8 +1298,8 @@
       "en": "Explain the core concept of Build optimization và deployment in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Build optimization và deployment. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Build optimization và deployment. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Build optimization và deployment là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Build optimization và deployment. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Build optimization và deployment is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1315,8 +1315,8 @@
       "en": "Describe the internal mechanism of Build optimization và deployment and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Build optimization và deployment. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Build optimization và deployment. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Build optimization và deployment có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Build optimization và deployment can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1332,8 +1332,8 @@
       "en": "What are common production pitfalls/edge cases of Build optimization và deployment, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Build optimization và deployment. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Build optimization và deployment. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Build optimization và deployment là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Build optimization và deployment include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1349,8 +1349,8 @@
       "en": "In large projects, how should Build optimization và deployment be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Build optimization và deployment. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Build optimization và deployment. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Build optimization và deployment ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Build optimization và deployment in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1366,8 +1366,8 @@
       "en": "Explain the core concept of Internationalization và localization in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Internationalization và localization. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Internationalization và localization. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Internationalization và localization là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Internationalization và localization. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Internationalization và localization is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1383,8 +1383,8 @@
       "en": "Describe the internal mechanism of Internationalization và localization and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Internationalization và localization. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Internationalization và localization. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Internationalization và localization có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Internationalization và localization can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1400,8 +1400,8 @@
       "en": "What are common production pitfalls/edge cases of Internationalization và localization, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Internationalization và localization. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Internationalization và localization. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Internationalization và localization là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Internationalization và localization include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1417,8 +1417,8 @@
       "en": "In large projects, how should Internationalization và localization be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Internationalization và localization. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Internationalization và localization. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Internationalization và localization ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Internationalization và localization in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1434,8 +1434,8 @@
       "en": "Explain the core concept of A11y: keyboard, aria, focus management in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: A11y: keyboard, aria, focus management. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: A11y: keyboard, aria, focus management. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "A11y: keyboard, aria, focus management là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của A11y: keyboard, aria, focus management. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "A11y: keyboard, aria, focus management is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1451,8 +1451,8 @@
       "en": "Describe the internal mechanism of A11y: keyboard, aria, focus management and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: A11y: keyboard, aria, focus management. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: A11y: keyboard, aria, focus management. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của A11y: keyboard, aria, focus management có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of A11y: keyboard, aria, focus management can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1468,8 +1468,8 @@
       "en": "What are common production pitfalls/edge cases of A11y: keyboard, aria, focus management, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: A11y: keyboard, aria, focus management. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: A11y: keyboard, aria, focus management. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với A11y: keyboard, aria, focus management là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in A11y: keyboard, aria, focus management include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1485,8 +1485,8 @@
       "en": "In large projects, how should A11y: keyboard, aria, focus management be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: A11y: keyboard, aria, focus management. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: A11y: keyboard, aria, focus management. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng A11y: keyboard, aria, focus management ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply A11y: keyboard, aria, focus management in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1502,8 +1502,8 @@
       "en": "Explain the core concept of Advanced DI: InjectionToken, multi providers in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Advanced DI: InjectionToken, multi providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Advanced DI: InjectionToken, multi providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Advanced DI: InjectionToken, multi providers là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Advanced DI: InjectionToken, multi providers. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Advanced DI: InjectionToken, multi providers is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1519,8 +1519,8 @@
       "en": "Describe the internal mechanism of Advanced DI: InjectionToken, multi providers and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Advanced DI: InjectionToken, multi providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Advanced DI: InjectionToken, multi providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Advanced DI: InjectionToken, multi providers có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Advanced DI: InjectionToken, multi providers can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1536,8 +1536,8 @@
       "en": "What are common production pitfalls/edge cases of Advanced DI: InjectionToken, multi providers, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Advanced DI: InjectionToken, multi providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Advanced DI: InjectionToken, multi providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Advanced DI: InjectionToken, multi providers là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Advanced DI: InjectionToken, multi providers include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1553,8 +1553,8 @@
       "en": "In large projects, how should Advanced DI: InjectionToken, multi providers be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Advanced DI: InjectionToken, multi providers. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Advanced DI: InjectionToken, multi providers. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Advanced DI: InjectionToken, multi providers ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Advanced DI: InjectionToken, multi providers in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1570,8 +1570,8 @@
       "en": "Explain the core concept of ng-content, ng-template, dynamic component in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: ng-content, ng-template, dynamic component. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: ng-content, ng-template, dynamic component. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "ng-content, ng-template, dynamic component là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của ng-content, ng-template, dynamic component. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "ng-content, ng-template, dynamic component is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1587,8 +1587,8 @@
       "en": "Describe the internal mechanism of ng-content, ng-template, dynamic component and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: ng-content, ng-template, dynamic component. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: ng-content, ng-template, dynamic component. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của ng-content, ng-template, dynamic component có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of ng-content, ng-template, dynamic component can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1604,8 +1604,8 @@
       "en": "What are common production pitfalls/edge cases of ng-content, ng-template, dynamic component, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: ng-content, ng-template, dynamic component. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: ng-content, ng-template, dynamic component. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với ng-content, ng-template, dynamic component là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in ng-content, ng-template, dynamic component include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1621,8 +1621,8 @@
       "en": "In large projects, how should ng-content, ng-template, dynamic component be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: ng-content, ng-template, dynamic component. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: ng-content, ng-template, dynamic component. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng ng-content, ng-template, dynamic component ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply ng-content, ng-template, dynamic component in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1638,8 +1638,8 @@
       "en": "Explain the core concept of Micro-frontend và module federation in Angular."
     },
     "answer": {
-      "vi": "Trọng tâm: Micro-frontend và module federation. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Micro-frontend và module federation. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Micro-frontend và module federation là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Micro-frontend và module federation. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Micro-frontend và module federation is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1655,8 +1655,8 @@
       "en": "Describe the internal mechanism of Micro-frontend và module federation and key processing steps."
     },
     "answer": {
-      "vi": "Trọng tâm: Micro-frontend và module federation. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Micro-frontend và module federation. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Cơ chế của Micro-frontend và module federation có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Micro-frontend và module federation can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1672,8 +1672,8 @@
       "en": "What are common production pitfalls/edge cases of Micro-frontend và module federation, and how can they be avoided?"
     },
     "answer": {
-      "vi": "Trọng tâm: Micro-frontend và module federation. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Micro-frontend và module federation. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Lỗi thường gặp với Micro-frontend và module federation là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Micro-frontend và module federation include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1689,8 +1689,8 @@
       "en": "In large projects, how should Micro-frontend và module federation be applied for scalability, maintainability, and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Micro-frontend và module federation. Câu trả lời nên gồm: định nghĩa, luồng hoạt động, ví dụ code ngắn, lỗi thường gặp, và guideline production cho Angular app.",
-      "en": "Focus: Micro-frontend và module federation. A strong answer should include definition, execution flow, short code sample, common pitfalls, and production guidelines for Angular apps."
+      "vi": "Để áp dụng Micro-frontend và module federation ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Micro-frontend và module federation in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [

@@ -6,8 +6,8 @@
       "en": "Explain the core concept of Closure và lexical scope."
     },
     "answer": {
-      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Closure và lexical scope là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Closure và lexical scope. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Closure và lexical scope is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -23,8 +23,8 @@
       "en": "Describe the internal mechanism of Closure và lexical scope and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Closure và lexical scope có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Closure và lexical scope can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -40,8 +40,8 @@
       "en": "What common production pitfalls/edge cases exist in Closure và lexical scope, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Closure và lexical scope là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Closure và lexical scope include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -57,8 +57,8 @@
       "en": "In real system design, how should Closure và lexical scope be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Closure và lexical scope ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Closure và lexical scope in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -74,8 +74,8 @@
       "en": "Explain the core concept of Event loop, microtask, macrotask."
     },
     "answer": {
-      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Event loop, microtask, macrotask là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Event loop, microtask, macrotask. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Event loop, microtask, macrotask is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -91,8 +91,8 @@
       "en": "Describe the internal mechanism of Event loop, microtask, macrotask and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Event loop, microtask, macrotask có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Event loop, microtask, macrotask can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -108,8 +108,8 @@
       "en": "What common production pitfalls/edge cases exist in Event loop, microtask, macrotask, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Event loop, microtask, macrotask là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Event loop, microtask, macrotask include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -125,8 +125,8 @@
       "en": "In real system design, how should Event loop, microtask, macrotask be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Event loop, microtask, macrotask ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Event loop, microtask, macrotask in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -142,8 +142,8 @@
       "en": "Explain the core concept of this binding và arrow function."
     },
     "answer": {
-      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "this binding và arrow function là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của this binding và arrow function. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "this binding và arrow function is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -159,8 +159,8 @@
       "en": "Describe the internal mechanism of this binding và arrow function and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của this binding và arrow function có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of this binding và arrow function can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -176,8 +176,8 @@
       "en": "What common production pitfalls/edge cases exist in this binding và arrow function, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với this binding và arrow function là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in this binding và arrow function include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -193,8 +193,8 @@
       "en": "In real system design, how should this binding và arrow function be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng this binding và arrow function ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply this binding và arrow function in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -210,8 +210,8 @@
       "en": "Explain the core concept of Prototype chain và class."
     },
     "answer": {
-      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Prototype chain và class là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Prototype chain và class. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Prototype chain và class is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -227,8 +227,8 @@
       "en": "Describe the internal mechanism of Prototype chain và class and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Prototype chain và class có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Prototype chain và class can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -244,8 +244,8 @@
       "en": "What common production pitfalls/edge cases exist in Prototype chain và class, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Prototype chain và class là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Prototype chain và class include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -261,8 +261,8 @@
       "en": "In real system design, how should Prototype chain và class be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Prototype chain và class ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Prototype chain và class in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -278,8 +278,8 @@
       "en": "Explain the core concept of Promise, async/await, error handling."
     },
     "answer": {
-      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Promise, async/await, error handling là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Promise, async/await, error handling. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Promise, async/await, error handling is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -295,8 +295,8 @@
       "en": "Describe the internal mechanism of Promise, async/await, error handling and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Promise, async/await, error handling có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Promise, async/await, error handling can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -312,8 +312,8 @@
       "en": "What common production pitfalls/edge cases exist in Promise, async/await, error handling, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Promise, async/await, error handling là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Promise, async/await, error handling include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -329,8 +329,8 @@
       "en": "In real system design, how should Promise, async/await, error handling be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Promise, async/await, error handling ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Promise, async/await, error handling in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -346,8 +346,8 @@
       "en": "Explain the core concept of Memory leak và garbage collection."
     },
     "answer": {
-      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Memory leak và garbage collection là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Memory leak và garbage collection. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Memory leak và garbage collection is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -363,8 +363,8 @@
       "en": "Describe the internal mechanism of Memory leak và garbage collection and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Memory leak và garbage collection có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Memory leak và garbage collection can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -380,8 +380,8 @@
       "en": "What common production pitfalls/edge cases exist in Memory leak và garbage collection, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Memory leak và garbage collection là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Memory leak và garbage collection include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -397,8 +397,8 @@
       "en": "In real system design, how should Memory leak và garbage collection be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Memory leak và garbage collection ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Memory leak và garbage collection in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -414,8 +414,8 @@
       "en": "Explain the core concept of Tối ưu hiệu năng render và JS runtime."
     },
     "answer": {
-      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Tối ưu hiệu năng render và JS runtime là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Tối ưu hiệu năng render và JS runtime. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Tối ưu hiệu năng render và JS runtime is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -431,8 +431,8 @@
       "en": "Describe the internal mechanism of Tối ưu hiệu năng render và JS runtime and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Tối ưu hiệu năng render và JS runtime có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Tối ưu hiệu năng render và JS runtime can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -448,8 +448,8 @@
       "en": "What common production pitfalls/edge cases exist in Tối ưu hiệu năng render và JS runtime, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Tối ưu hiệu năng render và JS runtime là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Tối ưu hiệu năng render và JS runtime include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -465,8 +465,8 @@
       "en": "In real system design, how should Tối ưu hiệu năng render và JS runtime be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Tối ưu hiệu năng render và JS runtime ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Tối ưu hiệu năng render và JS runtime in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -482,8 +482,8 @@
       "en": "Explain the core concept of ESM, CommonJS, dynamic import."
     },
     "answer": {
-      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "ESM, CommonJS, dynamic import là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của ESM, CommonJS, dynamic import. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "ESM, CommonJS, dynamic import is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -499,8 +499,8 @@
       "en": "Describe the internal mechanism of ESM, CommonJS, dynamic import and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của ESM, CommonJS, dynamic import có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of ESM, CommonJS, dynamic import can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -516,8 +516,8 @@
       "en": "What common production pitfalls/edge cases exist in ESM, CommonJS, dynamic import, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với ESM, CommonJS, dynamic import là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in ESM, CommonJS, dynamic import include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -533,8 +533,8 @@
       "en": "In real system design, how should ESM, CommonJS, dynamic import be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng ESM, CommonJS, dynamic import ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply ESM, CommonJS, dynamic import in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -550,8 +550,8 @@
       "en": "Explain the core concept of Object descriptors, immutability, Proxy."
     },
     "answer": {
-      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Object descriptors, immutability, Proxy là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Object descriptors, immutability, Proxy. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Object descriptors, immutability, Proxy is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -567,8 +567,8 @@
       "en": "Describe the internal mechanism of Object descriptors, immutability, Proxy and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Object descriptors, immutability, Proxy có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Object descriptors, immutability, Proxy can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -584,8 +584,8 @@
       "en": "What common production pitfalls/edge cases exist in Object descriptors, immutability, Proxy, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Object descriptors, immutability, Proxy là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Object descriptors, immutability, Proxy include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -601,8 +601,8 @@
       "en": "In real system design, how should Object descriptors, immutability, Proxy be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Object descriptors, immutability, Proxy ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Object descriptors, immutability, Proxy in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -618,8 +618,8 @@
       "en": "Explain the core concept of Map/Set/WeakMap/WeakSet."
     },
     "answer": {
-      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Map/Set/WeakMap/WeakSet là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Map/Set/WeakMap/WeakSet. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Map/Set/WeakMap/WeakSet is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -635,8 +635,8 @@
       "en": "Describe the internal mechanism of Map/Set/WeakMap/WeakSet and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Map/Set/WeakMap/WeakSet có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Map/Set/WeakMap/WeakSet can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -652,8 +652,8 @@
       "en": "What common production pitfalls/edge cases exist in Map/Set/WeakMap/WeakSet, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Map/Set/WeakMap/WeakSet là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Map/Set/WeakMap/WeakSet include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -669,8 +669,8 @@
       "en": "In real system design, how should Map/Set/WeakMap/WeakSet be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Map/Set/WeakMap/WeakSet ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Map/Set/WeakMap/WeakSet in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -686,8 +686,8 @@
       "en": "Explain the core concept of Type coercion, equality, edge cases."
     },
     "answer": {
-      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Type coercion, equality, edge cases là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Type coercion, equality, edge cases. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Type coercion, equality, edge cases is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -703,8 +703,8 @@
       "en": "Describe the internal mechanism of Type coercion, equality, edge cases and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Type coercion, equality, edge cases có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Type coercion, equality, edge cases can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -720,8 +720,8 @@
       "en": "What common production pitfalls/edge cases exist in Type coercion, equality, edge cases, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Type coercion, equality, edge cases là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Type coercion, equality, edge cases include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -737,8 +737,8 @@
       "en": "In real system design, how should Type coercion, equality, edge cases be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Type coercion, equality, edge cases ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Type coercion, equality, edge cases in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -754,8 +754,8 @@
       "en": "Explain the core concept of Fetch, AbortController, Streams."
     },
     "answer": {
-      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Fetch, AbortController, Streams là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Fetch, AbortController, Streams. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Fetch, AbortController, Streams is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -771,8 +771,8 @@
       "en": "Describe the internal mechanism of Fetch, AbortController, Streams and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Fetch, AbortController, Streams có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Fetch, AbortController, Streams can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -788,8 +788,8 @@
       "en": "What common production pitfalls/edge cases exist in Fetch, AbortController, Streams, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Fetch, AbortController, Streams là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Fetch, AbortController, Streams include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -805,8 +805,8 @@
       "en": "In real system design, how should Fetch, AbortController, Streams be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Fetch, AbortController, Streams ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Fetch, AbortController, Streams in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -822,8 +822,8 @@
       "en": "Explain the core concept of Event delegation, capture/bubble, passive."
     },
     "answer": {
-      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Event delegation, capture/bubble, passive là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Event delegation, capture/bubble, passive. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Event delegation, capture/bubble, passive is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -839,8 +839,8 @@
       "en": "Describe the internal mechanism of Event delegation, capture/bubble, passive and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Event delegation, capture/bubble, passive có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Event delegation, capture/bubble, passive can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -856,8 +856,8 @@
       "en": "What common production pitfalls/edge cases exist in Event delegation, capture/bubble, passive, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Event delegation, capture/bubble, passive là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Event delegation, capture/bubble, passive include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -873,8 +873,8 @@
       "en": "In real system design, how should Event delegation, capture/bubble, passive be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Event delegation, capture/bubble, passive ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Event delegation, capture/bubble, passive in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -890,8 +890,8 @@
       "en": "Explain the core concept of Service worker, cache strategy, offline."
     },
     "answer": {
-      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Service worker, cache strategy, offline là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Service worker, cache strategy, offline. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Service worker, cache strategy, offline is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -907,8 +907,8 @@
       "en": "Describe the internal mechanism of Service worker, cache strategy, offline and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Service worker, cache strategy, offline có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Service worker, cache strategy, offline can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -924,8 +924,8 @@
       "en": "What common production pitfalls/edge cases exist in Service worker, cache strategy, offline, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Service worker, cache strategy, offline là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Service worker, cache strategy, offline include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -941,8 +941,8 @@
       "en": "In real system design, how should Service worker, cache strategy, offline be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Service worker, cache strategy, offline ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Service worker, cache strategy, offline in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -958,8 +958,8 @@
       "en": "Explain the core concept of XSS/CSRF và bảo mật frontend."
     },
     "answer": {
-      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "XSS/CSRF và bảo mật frontend là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của XSS/CSRF và bảo mật frontend. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "XSS/CSRF và bảo mật frontend is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -975,8 +975,8 @@
       "en": "Describe the internal mechanism of XSS/CSRF và bảo mật frontend and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của XSS/CSRF và bảo mật frontend có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of XSS/CSRF và bảo mật frontend can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -992,8 +992,8 @@
       "en": "What common production pitfalls/edge cases exist in XSS/CSRF và bảo mật frontend, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với XSS/CSRF và bảo mật frontend là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in XSS/CSRF và bảo mật frontend include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1009,8 +1009,8 @@
       "en": "In real system design, how should XSS/CSRF và bảo mật frontend be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng XSS/CSRF và bảo mật frontend ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply XSS/CSRF và bảo mật frontend in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1026,8 +1026,8 @@
       "en": "Explain the core concept of State management, immutability, optimistic UI."
     },
     "answer": {
-      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "State management, immutability, optimistic UI là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của State management, immutability, optimistic UI. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "State management, immutability, optimistic UI is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1043,8 +1043,8 @@
       "en": "Describe the internal mechanism of State management, immutability, optimistic UI and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của State management, immutability, optimistic UI có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of State management, immutability, optimistic UI can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1060,8 +1060,8 @@
       "en": "What common production pitfalls/edge cases exist in State management, immutability, optimistic UI, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với State management, immutability, optimistic UI là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in State management, immutability, optimistic UI include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1077,8 +1077,8 @@
       "en": "In real system design, how should State management, immutability, optimistic UI be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng State management, immutability, optimistic UI ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply State management, immutability, optimistic UI in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1094,8 +1094,8 @@
       "en": "Explain the core concept of Test strategy, mock timer, contract test."
     },
     "answer": {
-      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Test strategy, mock timer, contract test là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Test strategy, mock timer, contract test. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Test strategy, mock timer, contract test is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1111,8 +1111,8 @@
       "en": "Describe the internal mechanism of Test strategy, mock timer, contract test and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Test strategy, mock timer, contract test có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Test strategy, mock timer, contract test can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1128,8 +1128,8 @@
       "en": "What common production pitfalls/edge cases exist in Test strategy, mock timer, contract test, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Test strategy, mock timer, contract test là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Test strategy, mock timer, contract test include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1145,8 +1145,8 @@
       "en": "In real system design, how should Test strategy, mock timer, contract test be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Test strategy, mock timer, contract test ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Test strategy, mock timer, contract test in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1162,8 +1162,8 @@
       "en": "Explain the core concept of Bundling, tree-shaking, source maps."
     },
     "answer": {
-      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Bundling, tree-shaking, source maps là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Bundling, tree-shaking, source maps. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Bundling, tree-shaking, source maps is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1179,8 +1179,8 @@
       "en": "Describe the internal mechanism of Bundling, tree-shaking, source maps and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Bundling, tree-shaking, source maps có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Bundling, tree-shaking, source maps can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1196,8 +1196,8 @@
       "en": "What common production pitfalls/edge cases exist in Bundling, tree-shaking, source maps, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Bundling, tree-shaking, source maps là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Bundling, tree-shaking, source maps include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1213,8 +1213,8 @@
       "en": "In real system design, how should Bundling, tree-shaking, source maps be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Bundling, tree-shaking, source maps ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Bundling, tree-shaking, source maps in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1230,8 +1230,8 @@
       "en": "Explain the core concept of Intl APIs và localization."
     },
     "answer": {
-      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Intl APIs và localization là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Intl APIs và localization. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Intl APIs và localization is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1247,8 +1247,8 @@
       "en": "Describe the internal mechanism of Intl APIs và localization and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Intl APIs và localization có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Intl APIs và localization can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1264,8 +1264,8 @@
       "en": "What common production pitfalls/edge cases exist in Intl APIs và localization, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Intl APIs và localization là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Intl APIs và localization include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1281,8 +1281,8 @@
       "en": "In real system design, how should Intl APIs và localization be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Intl APIs và localization ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Intl APIs và localization in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1298,8 +1298,8 @@
       "en": "Explain the core concept of Retry, backoff, idempotency."
     },
     "answer": {
-      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Retry, backoff, idempotency là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Retry, backoff, idempotency. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Retry, backoff, idempotency is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1315,8 +1315,8 @@
       "en": "Describe the internal mechanism of Retry, backoff, idempotency and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Retry, backoff, idempotency có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Retry, backoff, idempotency can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1332,8 +1332,8 @@
       "en": "What common production pitfalls/edge cases exist in Retry, backoff, idempotency, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Retry, backoff, idempotency là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Retry, backoff, idempotency include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1349,8 +1349,8 @@
       "en": "In real system design, how should Retry, backoff, idempotency be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Retry, backoff, idempotency ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Retry, backoff, idempotency in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1366,8 +1366,8 @@
       "en": "Explain the core concept of Worker, postMessage, structured clone."
     },
     "answer": {
-      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Worker, postMessage, structured clone là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Worker, postMessage, structured clone. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Worker, postMessage, structured clone is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1383,8 +1383,8 @@
       "en": "Describe the internal mechanism of Worker, postMessage, structured clone and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Worker, postMessage, structured clone có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Worker, postMessage, structured clone can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1400,8 +1400,8 @@
       "en": "What common production pitfalls/edge cases exist in Worker, postMessage, structured clone, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Worker, postMessage, structured clone là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Worker, postMessage, structured clone include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1417,8 +1417,8 @@
       "en": "In real system design, how should Worker, postMessage, structured clone be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Worker, postMessage, structured clone ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Worker, postMessage, structured clone in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1434,8 +1434,8 @@
       "en": "Explain the core concept of Floating point, BigInt, precision."
     },
     "answer": {
-      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Floating point, BigInt, precision là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Floating point, BigInt, precision. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Floating point, BigInt, precision is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1451,8 +1451,8 @@
       "en": "Describe the internal mechanism of Floating point, BigInt, precision and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Floating point, BigInt, precision có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Floating point, BigInt, precision can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1468,8 +1468,8 @@
       "en": "What common production pitfalls/edge cases exist in Floating point, BigInt, precision, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Floating point, BigInt, precision là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Floating point, BigInt, precision include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1485,8 +1485,8 @@
       "en": "In real system design, how should Floating point, BigInt, precision be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Floating point, BigInt, precision ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Floating point, BigInt, precision in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1502,8 +1502,8 @@
       "en": "Explain the core concept of RegExp performance và backtracking."
     },
     "answer": {
-      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "RegExp performance và backtracking là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của RegExp performance và backtracking. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "RegExp performance và backtracking is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1519,8 +1519,8 @@
       "en": "Describe the internal mechanism of RegExp performance và backtracking and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của RegExp performance và backtracking có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of RegExp performance và backtracking can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1536,8 +1536,8 @@
       "en": "What common production pitfalls/edge cases exist in RegExp performance và backtracking, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với RegExp performance và backtracking là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in RegExp performance và backtracking include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1553,8 +1553,8 @@
       "en": "In real system design, how should RegExp performance và backtracking be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng RegExp performance và backtracking ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply RegExp performance và backtracking in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1570,8 +1570,8 @@
       "en": "Explain the core concept of LocalStorage, IndexedDB, quota."
     },
     "answer": {
-      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "LocalStorage, IndexedDB, quota là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của LocalStorage, IndexedDB, quota. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "LocalStorage, IndexedDB, quota is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1587,8 +1587,8 @@
       "en": "Describe the internal mechanism of LocalStorage, IndexedDB, quota and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của LocalStorage, IndexedDB, quota có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of LocalStorage, IndexedDB, quota can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1604,8 +1604,8 @@
       "en": "What common production pitfalls/edge cases exist in LocalStorage, IndexedDB, quota, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với LocalStorage, IndexedDB, quota là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in LocalStorage, IndexedDB, quota include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1621,8 +1621,8 @@
       "en": "In real system design, how should LocalStorage, IndexedDB, quota be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng LocalStorage, IndexedDB, quota ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply LocalStorage, IndexedDB, quota in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1638,8 +1638,8 @@
       "en": "Explain the core concept of Patterns, DI, observability."
     },
     "answer": {
-      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Patterns, DI, observability là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Patterns, DI, observability. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Patterns, DI, observability is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1655,8 +1655,8 @@
       "en": "Describe the internal mechanism of Patterns, DI, observability and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Patterns, DI, observability có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Patterns, DI, observability can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1672,8 +1672,8 @@
       "en": "What common production pitfalls/edge cases exist in Patterns, DI, observability, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Patterns, DI, observability là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Patterns, DI, observability include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1689,8 +1689,8 @@
       "en": "In real system design, how should Patterns, DI, observability be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Patterns, DI, observability ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Patterns, DI, observability in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
