@@ -1,41 +1,1702 @@
 [
   {
-    "id": "ps-debug-01",
+    "id": "ps-deep-001",
     "question": {
-      "vi": "Khi gặp bug production khó tái hiện, bạn xử lý theo quy trình nào?",
-      "en": "How do you handle a hard-to-reproduce production bug?"
+      "vi": "Giải thích khái niệm cốt lõi của Xác định đúng bài toán và phạm vi trong problem solving thực tế.",
+      "en": "Explain the core concept of Xác định đúng bài toán và phạm vi in practical problem solving."
     },
     "answer": {
-      "vi": "Thu thập log/telemetry, tạo giả thuyết, tái tạo với dữ liệu gần thực tế, thu hẹp phạm vi, fix và thêm regression test.",
-      "en": "Collect logs/telemetry, form hypotheses, reproduce with realistic data, narrow scope, implement fix, and add regression tests."
-    },
-    "level": "intermediate",
-    "tags": ["problem-solving", "debugging"]
-  },
-  {
-    "id": "ps-tradeoff-01",
-    "question": {
-      "vi": "Một giải pháp nhanh nhưng technical debt cao; giải pháp kia chậm nhưng bền vững. Cân bằng thế nào?",
-      "en": "One option is fast but creates high technical debt; another is slower but sustainable. How do you balance it?"
-    },
-    "answer": {
-      "vi": "Đánh giá impact business, tuổi thọ feature, rủi ro vận hành; chọn phương án có guardrails và kế hoạch refactor rõ ràng.",
-      "en": "Evaluate business impact, feature lifespan, and operational risk; choose with guardrails and a clear refactor plan."
-    },
-    "level": "advanced",
-    "tags": ["problem-solving", "architecture"]
-  },
-  {
-    "id": "ps-communication-01",
-    "question": {
-      "vi": "Cách trình bày một bài toán kỹ thuật phức tạp với interviewer không chuyên sâu lĩnh vực?",
-      "en": "How do you present a complex technical problem to an interviewer outside your specialty?"
-    },
-    "answer": {
-      "vi": "Bắt đầu từ bối cảnh + mục tiêu, nêu ràng buộc, so sánh phương án, chốt lý do chọn và cách đo kết quả.",
-      "en": "Start with context and goal, explain constraints, compare options, then justify your decision and success metrics."
+      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
     },
     "level": "beginner",
-    "tags": ["problem-solving", "communication"]
+    "tags": [
+      "problem-solving",
+      "problem-framing",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-002",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Xác định đúng bài toán và phạm vi hiệu quả.",
+      "en": "Describe a step-by-step process to apply Xác định đúng bài toán và phạm vi effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "problem-framing",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-003",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Xác định đúng bài toán và phạm vi và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Xác định đúng bài toán và phạm vi, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "problem-framing",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-004",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Xác định đúng bài toán và phạm vi thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Xác định đúng bài toán và phạm vi be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xác định đúng bài toán và phạm vi. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xác định đúng bài toán và phạm vi. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "problem-framing",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-005",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Phân tích nguyên nhân gốc (root cause) trong problem solving thực tế.",
+      "en": "Explain the core concept of Phân tích nguyên nhân gốc (root cause) in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "root-cause",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-006",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Phân tích nguyên nhân gốc (root cause) hiệu quả.",
+      "en": "Describe a step-by-step process to apply Phân tích nguyên nhân gốc (root cause) effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "root-cause",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-007",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Phân tích nguyên nhân gốc (root cause) và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Phân tích nguyên nhân gốc (root cause), and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "root-cause",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-008",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Phân tích nguyên nhân gốc (root cause) thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Phân tích nguyên nhân gốc (root cause) be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích nguyên nhân gốc (root cause). Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích nguyên nhân gốc (root cause). A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "root-cause",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-009",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Làm rõ requirement và giả định trong problem solving thực tế.",
+      "en": "Explain the core concept of Làm rõ requirement và giả định in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "requirements",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-010",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Làm rõ requirement và giả định hiệu quả.",
+      "en": "Describe a step-by-step process to apply Làm rõ requirement và giả định effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "requirements",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-011",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Làm rõ requirement và giả định và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Làm rõ requirement và giả định, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "requirements",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-012",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Làm rõ requirement và giả định thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Làm rõ requirement và giả định be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Làm rõ requirement và giả định. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Làm rõ requirement và giả định. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "requirements",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-013",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Đánh đổi kỹ thuật và business impact trong problem solving thực tế.",
+      "en": "Explain the core concept of Đánh đổi kỹ thuật và business impact in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "trade-offs",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-014",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Đánh đổi kỹ thuật và business impact hiệu quả.",
+      "en": "Describe a step-by-step process to apply Đánh đổi kỹ thuật và business impact effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "trade-offs",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-015",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Đánh đổi kỹ thuật và business impact và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Đánh đổi kỹ thuật và business impact, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "trade-offs",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-016",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Đánh đổi kỹ thuật và business impact thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Đánh đổi kỹ thuật và business impact be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh đổi kỹ thuật và business impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh đổi kỹ thuật và business impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "trade-offs",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-017",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Ưu tiên theo mức độ ảnh hưởng/khẩn cấp trong problem solving thực tế.",
+      "en": "Explain the core concept of Ưu tiên theo mức độ ảnh hưởng/khẩn cấp in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "prioritization",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-018",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Ưu tiên theo mức độ ảnh hưởng/khẩn cấp hiệu quả.",
+      "en": "Describe a step-by-step process to apply Ưu tiên theo mức độ ảnh hưởng/khẩn cấp effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "prioritization",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-019",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Ưu tiên theo mức độ ảnh hưởng/khẩn cấp và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Ưu tiên theo mức độ ảnh hưởng/khẩn cấp, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "prioritization",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-020",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Ưu tiên theo mức độ ảnh hưởng/khẩn cấp thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Ưu tiên theo mức độ ảnh hưởng/khẩn cấp be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo mức độ ảnh hưởng/khẩn cấp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "prioritization",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-021",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Quy trình debug có hệ thống trong problem solving thực tế.",
+      "en": "Explain the core concept of Quy trình debug có hệ thống in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "debugging",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-022",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Quy trình debug có hệ thống hiệu quả.",
+      "en": "Describe a step-by-step process to apply Quy trình debug có hệ thống effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "debugging",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-023",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Quy trình debug có hệ thống và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Quy trình debug có hệ thống, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "debugging",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-024",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Quy trình debug có hệ thống thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Quy trình debug có hệ thống be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Quy trình debug có hệ thống. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Quy trình debug có hệ thống. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "debugging",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-025",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Đặt giả thuyết và kiểm chứng trong problem solving thực tế.",
+      "en": "Explain the core concept of Đặt giả thuyết và kiểm chứng in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "hypothesis",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-026",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Đặt giả thuyết và kiểm chứng hiệu quả.",
+      "en": "Describe a step-by-step process to apply Đặt giả thuyết và kiểm chứng effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "hypothesis",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-027",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Đặt giả thuyết và kiểm chứng và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Đặt giả thuyết và kiểm chứng, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "hypothesis",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-028",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Đặt giả thuyết và kiểm chứng thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Đặt giả thuyết và kiểm chứng be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đặt giả thuyết và kiểm chứng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đặt giả thuyết và kiểm chứng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "hypothesis",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-029",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Định nghĩa metric đo thành công trong problem solving thực tế.",
+      "en": "Explain the core concept of Định nghĩa metric đo thành công in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "metrics",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-030",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Định nghĩa metric đo thành công hiệu quả.",
+      "en": "Describe a step-by-step process to apply Định nghĩa metric đo thành công effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "metrics",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-031",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Định nghĩa metric đo thành công và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Định nghĩa metric đo thành công, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "metrics",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-032",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Định nghĩa metric đo thành công thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Định nghĩa metric đo thành công be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Định nghĩa metric đo thành công. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Định nghĩa metric đo thành công. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "metrics",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-033",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Xử lý sự cố production trong problem solving thực tế.",
+      "en": "Explain the core concept of Xử lý sự cố production in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "incident-response",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-034",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Xử lý sự cố production hiệu quả.",
+      "en": "Describe a step-by-step process to apply Xử lý sự cố production effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "incident-response",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-035",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Xử lý sự cố production và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Xử lý sự cố production, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "incident-response",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-036",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Xử lý sự cố production thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Xử lý sự cố production be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý sự cố production. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý sự cố production. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "incident-response",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-037",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Giao tiếp với stakeholder khi có vấn đề trong problem solving thực tế.",
+      "en": "Explain the core concept of Giao tiếp với stakeholder khi có vấn đề in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "communication",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-038",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Giao tiếp với stakeholder khi có vấn đề hiệu quả.",
+      "en": "Describe a step-by-step process to apply Giao tiếp với stakeholder khi có vấn đề effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "communication",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-039",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Giao tiếp với stakeholder khi có vấn đề và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Giao tiếp với stakeholder khi có vấn đề, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "communication",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-040",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Giao tiếp với stakeholder khi có vấn đề thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Giao tiếp với stakeholder khi có vấn đề be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Giao tiếp với stakeholder khi có vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Giao tiếp với stakeholder khi có vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "communication",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-041",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Ra quyết định dưới điều kiện thiếu dữ liệu trong problem solving thực tế.",
+      "en": "Explain the core concept of Ra quyết định dưới điều kiện thiếu dữ liệu in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "decision-making",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-042",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Ra quyết định dưới điều kiện thiếu dữ liệu hiệu quả.",
+      "en": "Describe a step-by-step process to apply Ra quyết định dưới điều kiện thiếu dữ liệu effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "decision-making",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-043",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Ra quyết định dưới điều kiện thiếu dữ liệu và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Ra quyết định dưới điều kiện thiếu dữ liệu, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "decision-making",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-044",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Ra quyết định dưới điều kiện thiếu dữ liệu thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Ra quyết định dưới điều kiện thiếu dữ liệu be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ra quyết định dưới điều kiện thiếu dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ra quyết định dưới điều kiện thiếu dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "decision-making",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-045",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Đánh giá và giảm thiểu rủi ro trong problem solving thực tế.",
+      "en": "Explain the core concept of Đánh giá và giảm thiểu rủi ro in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "risk-management",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-046",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Đánh giá và giảm thiểu rủi ro hiệu quả.",
+      "en": "Describe a step-by-step process to apply Đánh giá và giảm thiểu rủi ro effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "risk-management",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-047",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Đánh giá và giảm thiểu rủi ro và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Đánh giá và giảm thiểu rủi ro, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "risk-management",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-048",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Đánh giá và giảm thiểu rủi ro thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Đánh giá và giảm thiểu rủi ro be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Đánh giá và giảm thiểu rủi ro. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Đánh giá và giảm thiểu rủi ro. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "risk-management",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-049",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Ước lượng effort và uncertainty trong problem solving thực tế.",
+      "en": "Explain the core concept of Ước lượng effort và uncertainty in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "estimation",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-050",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Ước lượng effort và uncertainty hiệu quả.",
+      "en": "Describe a step-by-step process to apply Ước lượng effort và uncertainty effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "estimation",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-051",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Ước lượng effort và uncertainty và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Ước lượng effort và uncertainty, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "estimation",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-052",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Ước lượng effort và uncertainty thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Ước lượng effort và uncertainty be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ước lượng effort và uncertainty. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ước lượng effort và uncertainty. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "estimation",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-053",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Tư duy hệ thống end-to-end trong problem solving thực tế.",
+      "en": "Explain the core concept of Tư duy hệ thống end-to-end in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "system-thinking",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-054",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Tư duy hệ thống end-to-end hiệu quả.",
+      "en": "Describe a step-by-step process to apply Tư duy hệ thống end-to-end effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "system-thinking",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-055",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Tư duy hệ thống end-to-end và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Tư duy hệ thống end-to-end, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "system-thinking",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-056",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Tư duy hệ thống end-to-end thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Tư duy hệ thống end-to-end be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tư duy hệ thống end-to-end. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Tư duy hệ thống end-to-end. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "system-thinking",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-057",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Phân tích bottleneck hiệu năng trong problem solving thực tế.",
+      "en": "Explain the core concept of Phân tích bottleneck hiệu năng in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "performance-analysis",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-058",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Phân tích bottleneck hiệu năng hiệu quả.",
+      "en": "Describe a step-by-step process to apply Phân tích bottleneck hiệu năng effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "performance-analysis",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-059",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Phân tích bottleneck hiệu năng và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Phân tích bottleneck hiệu năng, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "performance-analysis",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-060",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Phân tích bottleneck hiệu năng thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Phân tích bottleneck hiệu năng be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phân tích bottleneck hiệu năng. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phân tích bottleneck hiệu năng. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "performance-analysis",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-061",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Mở rộng hệ thống theo tải trong problem solving thực tế.",
+      "en": "Explain the core concept of Mở rộng hệ thống theo tải in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "scalability",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-062",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Mở rộng hệ thống theo tải hiệu quả.",
+      "en": "Describe a step-by-step process to apply Mở rộng hệ thống theo tải effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "scalability",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-063",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Mở rộng hệ thống theo tải và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Mở rộng hệ thống theo tải, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "scalability",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-064",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Mở rộng hệ thống theo tải thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Mở rộng hệ thống theo tải be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mở rộng hệ thống theo tải. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Mở rộng hệ thống theo tải. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "scalability",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-065",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Thiết kế chịu lỗi và rollback trong problem solving thực tế.",
+      "en": "Explain the core concept of Thiết kế chịu lỗi và rollback in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "resilience",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-066",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Thiết kế chịu lỗi và rollback hiệu quả.",
+      "en": "Describe a step-by-step process to apply Thiết kế chịu lỗi và rollback effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "resilience",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-067",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Thiết kế chịu lỗi và rollback và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Thiết kế chịu lỗi và rollback, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "resilience",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-068",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Thiết kế chịu lỗi và rollback thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Thiết kế chịu lỗi và rollback be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Thiết kế chịu lỗi và rollback. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Thiết kế chịu lỗi và rollback. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "resilience",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-069",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Xử lý vấn đề chất lượng dữ liệu trong problem solving thực tế.",
+      "en": "Explain the core concept of Xử lý vấn đề chất lượng dữ liệu in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "data-quality",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-070",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Xử lý vấn đề chất lượng dữ liệu hiệu quả.",
+      "en": "Describe a step-by-step process to apply Xử lý vấn đề chất lượng dữ liệu effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "data-quality",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-071",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Xử lý vấn đề chất lượng dữ liệu và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Xử lý vấn đề chất lượng dữ liệu, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "data-quality",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-072",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Xử lý vấn đề chất lượng dữ liệu thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Xử lý vấn đề chất lượng dữ liệu be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý vấn đề chất lượng dữ liệu. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý vấn đề chất lượng dữ liệu. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "data-quality",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-073",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của A/B test và thử nghiệm có kiểm soát trong problem solving thực tế.",
+      "en": "Explain the core concept of A/B test và thử nghiệm có kiểm soát in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "experimentation",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-074",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng A/B test và thử nghiệm có kiểm soát hiệu quả.",
+      "en": "Describe a step-by-step process to apply A/B test và thử nghiệm có kiểm soát effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "experimentation",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-075",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng A/B test và thử nghiệm có kiểm soát và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying A/B test và thử nghiệm có kiểm soát, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "experimentation",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-076",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá A/B test và thử nghiệm có kiểm soát thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can A/B test và thử nghiệm có kiểm soát be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: A/B test và thử nghiệm có kiểm soát. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: A/B test và thử nghiệm có kiểm soát. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "experimentation",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-077",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Viết postmortem và hành động phòng ngừa trong problem solving thực tế.",
+      "en": "Explain the core concept of Viết postmortem và hành động phòng ngừa in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "postmortem",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-078",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Viết postmortem và hành động phòng ngừa hiệu quả.",
+      "en": "Describe a step-by-step process to apply Viết postmortem và hành động phòng ngừa effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "postmortem",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-079",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Viết postmortem và hành động phòng ngừa và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Viết postmortem và hành động phòng ngừa, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "postmortem",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-080",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Viết postmortem và hành động phòng ngừa thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Viết postmortem và hành động phòng ngừa be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Viết postmortem và hành động phòng ngừa. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Viết postmortem và hành động phòng ngừa. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "postmortem",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-081",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Phối hợp đa nhóm để giải quyết vấn đề trong problem solving thực tế.",
+      "en": "Explain the core concept of Phối hợp đa nhóm để giải quyết vấn đề in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "team-collaboration",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-082",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Phối hợp đa nhóm để giải quyết vấn đề hiệu quả.",
+      "en": "Describe a step-by-step process to apply Phối hợp đa nhóm để giải quyết vấn đề effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "team-collaboration",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-083",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Phối hợp đa nhóm để giải quyết vấn đề và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Phối hợp đa nhóm để giải quyết vấn đề, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "team-collaboration",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-084",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Phối hợp đa nhóm để giải quyết vấn đề thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Phối hợp đa nhóm để giải quyết vấn đề be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Phối hợp đa nhóm để giải quyết vấn đề. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Phối hợp đa nhóm để giải quyết vấn đề. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "team-collaboration",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-085",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Ưu tiên theo customer impact trong problem solving thực tế.",
+      "en": "Explain the core concept of Ưu tiên theo customer impact in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "customer-impact",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-086",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Ưu tiên theo customer impact hiệu quả.",
+      "en": "Describe a step-by-step process to apply Ưu tiên theo customer impact effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "customer-impact",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-087",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Ưu tiên theo customer impact và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Ưu tiên theo customer impact, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "customer-impact",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-088",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Ưu tiên theo customer impact thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Ưu tiên theo customer impact be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Ưu tiên theo customer impact. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Ưu tiên theo customer impact. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "customer-impact",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-089",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Xử lý technical debt có chiến lược trong problem solving thực tế.",
+      "en": "Explain the core concept of Xử lý technical debt có chiến lược in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "technical-debt",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-090",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Xử lý technical debt có chiến lược hiệu quả.",
+      "en": "Describe a step-by-step process to apply Xử lý technical debt có chiến lược effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "technical-debt",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-091",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Xử lý technical debt có chiến lược và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Xử lý technical debt có chiến lược, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "technical-debt",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-092",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Xử lý technical debt có chiến lược thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Xử lý technical debt có chiến lược be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Xử lý technical debt có chiến lược. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Xử lý technical debt có chiến lược. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "technical-debt",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-093",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Cải tiến quy trình sau mỗi incident trong problem solving thực tế.",
+      "en": "Explain the core concept of Cải tiến quy trình sau mỗi incident in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "process-improvement",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-094",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Cải tiến quy trình sau mỗi incident hiệu quả.",
+      "en": "Describe a step-by-step process to apply Cải tiến quy trình sau mỗi incident effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "process-improvement",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-095",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Cải tiến quy trình sau mỗi incident và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Cải tiến quy trình sau mỗi incident, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "process-improvement",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-096",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Cải tiến quy trình sau mỗi incident thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Cải tiến quy trình sau mỗi incident be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Cải tiến quy trình sau mỗi incident. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Cải tiến quy trình sau mỗi incident. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "process-improvement",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ps-deep-097",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Dẫn dắt giải quyết vấn đề phức tạp trong problem solving thực tế.",
+      "en": "Explain the core concept of Dẫn dắt giải quyết vấn đề phức tạp in practical problem solving."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "beginner",
+    "tags": [
+      "problem-solving",
+      "leadership",
+      "concept"
+    ]
+  },
+  {
+    "id": "ps-deep-098",
+    "question": {
+      "vi": "Mô tả quy trình từng bước để áp dụng Dẫn dắt giải quyết vấn đề phức tạp hiệu quả.",
+      "en": "Describe a step-by-step process to apply Dẫn dắt giải quyết vấn đề phức tạp effectively."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "leadership",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ps-deep-099",
+    "question": {
+      "vi": "Các lỗi/edge cases thường gặp khi áp dụng Dẫn dắt giải quyết vấn đề phức tạp và cách tránh?",
+      "en": "What common pitfalls/edge cases appear when applying Dẫn dắt giải quyết vấn đề phức tạp, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "intermediate",
+    "tags": [
+      "problem-solving",
+      "leadership",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ps-deep-100",
+    "question": {
+      "vi": "Trong tổ chức lớn, chuẩn hoá Dẫn dắt giải quyết vấn đề phức tạp thế nào để bền vững và đo lường được?",
+      "en": "In larger organizations, how can Dẫn dắt giải quyết vấn đề phức tạp be standardized for sustainability and measurable outcomes?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Dẫn dắt giải quyết vấn đề phức tạp. Câu trả lời nên có: bối cảnh, bước phân tích, tiêu chí quyết định, ví dụ thực tế, và cách đo hiệu quả sau triển khai.",
+      "en": "Focus: Dẫn dắt giải quyết vấn đề phức tạp. A strong answer should include context, analysis steps, decision criteria, practical example, and post-implementation success metrics."
+    },
+    "level": "advanced",
+    "tags": [
+      "problem-solving",
+      "leadership",
+      "architecture"
+    ]
   }
 ]

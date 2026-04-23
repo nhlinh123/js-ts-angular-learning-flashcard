@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'JS/TS/Angular Flashcards',
+        name: 'Flashcards learning',
         short_name: 'JTA Flashcards',
         description: 'Active recall + spaced repetition cho JS/TS/Angular interview',
         theme_color: '#0f172a',

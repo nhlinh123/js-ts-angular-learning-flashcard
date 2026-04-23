@@ -1,41 +1,1702 @@
 [
   {
-    "id": "ts-interface-type-01",
+    "id": "ts-deep-001",
     "question": {
-      "vi": "Khác nhau chính giữa interface và type alias trong TypeScript?",
-      "en": "What are the key differences between interface and type alias in TypeScript?"
+      "vi": "Giải thích khái niệm cốt lõi của Type inference và control-flow narrowing.",
+      "en": "Explain the core concept of Type inference và control-flow narrowing."
     },
     "answer": {
-      "vi": "Interface hỗ trợ declaration merging và thường dùng cho object contract. Type alias linh hoạt hơn cho union, mapped, conditional types.",
-      "en": "Interface supports declaration merging and is commonly used for object contracts. Type aliases are more flexible for unions, mapped and conditional types."
+      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "beginner",
-    "tags": ["typescript", "types"]
+    "tags": [
+      "typescript",
+      "inference",
+      "concept"
+    ]
   },
   {
-    "id": "ts-generics-01",
+    "id": "ts-deep-002",
     "question": {
-      "vi": "Giải thích generic constraint với extends và lợi ích khi design API.",
-      "en": "Explain generic constraints with extends and why they help API design."
+      "vi": "Mô tả cơ chế hoạt động bên trong của Type inference và control-flow narrowing và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Type inference và control-flow narrowing and key execution order."
     },
     "answer": {
-      "vi": "Constraint giới hạn kiểu T phải thỏa điều kiện (ví dụ T extends {id:string}) để compiler đảm bảo property tồn tại, giữ type-safety.",
-      "en": "Constraints restrict T to satisfy a shape (e.g., T extends {id:string}), so the compiler guarantees required properties and preserves type safety."
+      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "intermediate",
-    "tags": ["typescript", "generics"]
+    "tags": [
+      "typescript",
+      "inference",
+      "mechanism"
+    ]
   },
   {
-    "id": "ts-advanced-01",
+    "id": "ts-deep-003",
     "question": {
-      "vi": "Conditional type phân phối trên union khi nào?",
-      "en": "When do conditional types distribute across unions?"
+      "vi": "Các lỗi/edge cases phổ biến của Type inference và control-flow narrowing trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Type inference và control-flow narrowing, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Khi type parameter generic đứng trần ở vế trái extends (T extends U ? X : Y), TS sẽ áp điều kiện cho từng phần tử của union.",
-      "en": "When a naked generic parameter is on the left side of extends (T extends U ? X : Y), TypeScript applies the conditional per union member."
+      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "inference",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-004",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Type inference và control-flow narrowing như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Type inference và control-flow narrowing be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "advanced",
-    "tags": ["typescript", "conditional-types"]
+    "tags": [
+      "typescript",
+      "inference",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-005",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Generics, constraints, defaults.",
+      "en": "Explain the core concept of Generics, constraints, defaults."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "generics",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-006",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Generics, constraints, defaults và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Generics, constraints, defaults and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "generics",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-007",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Generics, constraints, defaults trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Generics, constraints, defaults, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "generics",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-008",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Generics, constraints, defaults như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Generics, constraints, defaults be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "generics",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-009",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Union/discriminated union/exhaustiveness.",
+      "en": "Explain the core concept of Union/discriminated union/exhaustiveness."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "unions",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-010",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Union/discriminated union/exhaustiveness và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Union/discriminated union/exhaustiveness and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "unions",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-011",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Union/discriminated union/exhaustiveness trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Union/discriminated union/exhaustiveness, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "unions",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-012",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Union/discriminated union/exhaustiveness như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Union/discriminated union/exhaustiveness be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "unions",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-013",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Utility types (Pick/Omit/Record/Extract).",
+      "en": "Explain the core concept of Utility types (Pick/Omit/Record/Extract)."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "utility-types",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-014",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Utility types (Pick/Omit/Record/Extract) và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Utility types (Pick/Omit/Record/Extract) and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "utility-types",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-015",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Utility types (Pick/Omit/Record/Extract) trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Utility types (Pick/Omit/Record/Extract), and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "utility-types",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-016",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Utility types (Pick/Omit/Record/Extract) như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Utility types (Pick/Omit/Record/Extract) be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "utility-types",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-017",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Conditional types, infer, distributive.",
+      "en": "Explain the core concept of Conditional types, infer, distributive."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "conditional",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-018",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Conditional types, infer, distributive và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Conditional types, infer, distributive and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "conditional",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-019",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Conditional types, infer, distributive trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Conditional types, infer, distributive, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "conditional",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-020",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Conditional types, infer, distributive như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Conditional types, infer, distributive be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "conditional",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-021",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Mapped types và template literal types.",
+      "en": "Explain the core concept of Mapped types và template literal types."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "mapped",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-022",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Mapped types và template literal types và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Mapped types và template literal types and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "mapped",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-023",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Mapped types và template literal types trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Mapped types và template literal types, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "mapped",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-024",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Mapped types và template literal types như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Mapped types và template literal types be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "mapped",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-025",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của strictNullChecks, unknown, never.",
+      "en": "Explain the core concept of strictNullChecks, unknown, never."
+    },
+    "answer": {
+      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "null-safety",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-026",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của strictNullChecks, unknown, never và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of strictNullChecks, unknown, never and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "null-safety",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-027",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của strictNullChecks, unknown, never trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in strictNullChecks, unknown, never, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "null-safety",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-028",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng strictNullChecks, unknown, never như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should strictNullChecks, unknown, never be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "null-safety",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-029",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của as, non-null assertion, assertion function.",
+      "en": "Explain the core concept of as, non-null assertion, assertion function."
+    },
+    "answer": {
+      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "assertions",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-030",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của as, non-null assertion, assertion function và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of as, non-null assertion, assertion function and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "assertions",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-031",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của as, non-null assertion, assertion function trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in as, non-null assertion, assertion function, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "assertions",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-032",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng as, non-null assertion, assertion function như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should as, non-null assertion, assertion function be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "assertions",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-033",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Custom type guards và predicates.",
+      "en": "Explain the core concept of Custom type guards và predicates."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "type-guards",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-034",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Custom type guards và predicates và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Custom type guards và predicates and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "type-guards",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-035",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Custom type guards và predicates trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Custom type guards và predicates, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "type-guards",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-036",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Custom type guards và predicates như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Custom type guards và predicates be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "type-guards",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-037",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Function overload, signatures, DTO typing.",
+      "en": "Explain the core concept of Function overload, signatures, DTO typing."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "api-design",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-038",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Function overload, signatures, DTO typing và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Function overload, signatures, DTO typing and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "api-design",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-039",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Function overload, signatures, DTO typing trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Function overload, signatures, DTO typing, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "api-design",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-040",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Function overload, signatures, DTO typing như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Function overload, signatures, DTO typing be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "api-design",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-041",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Strict flags và compiler options.",
+      "en": "Explain the core concept of Strict flags và compiler options."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "tsconfig",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-042",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Strict flags và compiler options và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Strict flags và compiler options and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "tsconfig",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-043",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Strict flags và compiler options trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Strict flags và compiler options, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "tsconfig",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-044",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Strict flags và compiler options như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Strict flags và compiler options be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "tsconfig",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-045",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của ESM/CJS interop, import type.",
+      "en": "Explain the core concept of ESM/CJS interop, import type."
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "modules",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-046",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của ESM/CJS interop, import type và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of ESM/CJS interop, import type and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "modules",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-047",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của ESM/CJS interop, import type trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in ESM/CJS interop, import type, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "modules",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-048",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng ESM/CJS interop, import type như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should ESM/CJS interop, import type be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "modules",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-049",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của .d.ts, module augmentation, declaration merge.",
+      "en": "Explain the core concept of .d.ts, module augmentation, declaration merge."
+    },
+    "answer": {
+      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "declarations",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-050",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của .d.ts, module augmentation, declaration merge và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of .d.ts, module augmentation, declaration merge and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "declarations",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-051",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của .d.ts, module augmentation, declaration merge trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in .d.ts, module augmentation, declaration merge, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "declarations",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-052",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng .d.ts, module augmentation, declaration merge như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should .d.ts, module augmentation, declaration merge be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "declarations",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-053",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Schema validation (zod/io-ts).",
+      "en": "Explain the core concept of Schema validation (zod/io-ts)."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "runtime-validation",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-054",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Schema validation (zod/io-ts) và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Schema validation (zod/io-ts) and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "runtime-validation",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-055",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Schema validation (zod/io-ts) trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Schema validation (zod/io-ts), and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "runtime-validation",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-056",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Schema validation (zod/io-ts) như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Schema validation (zod/io-ts) be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "runtime-validation",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-057",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Typing props/hooks/context/events.",
+      "en": "Explain the core concept of Typing props/hooks/context/events."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "react-typing",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-058",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Typing props/hooks/context/events và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Typing props/hooks/context/events and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "react-typing",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-059",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Typing props/hooks/context/events trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Typing props/hooks/context/events, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "react-typing",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-060",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Typing props/hooks/context/events như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Typing props/hooks/context/events be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "react-typing",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-061",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Finite state modeling cho UI.",
+      "en": "Explain the core concept of Finite state modeling cho UI."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "state-machines",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-062",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Finite state modeling cho UI và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Finite state modeling cho UI and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "state-machines",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-063",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Finite state modeling cho UI trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Finite state modeling cho UI, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "state-machines",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-064",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Finite state modeling cho UI như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Finite state modeling cho UI be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "state-machines",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-065",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Typed tests, mocks, contract tests.",
+      "en": "Explain the core concept of Typed tests, mocks, contract tests."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "testing",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-066",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Typed tests, mocks, contract tests và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Typed tests, mocks, contract tests and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "testing",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-067",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Typed tests, mocks, contract tests trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Typed tests, mocks, contract tests, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "testing",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-068",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Typed tests, mocks, contract tests như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Typed tests, mocks, contract tests be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "testing",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-069",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Project references, incremental build.",
+      "en": "Explain the core concept of Project references, incremental build."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "monorepo",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-070",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Project references, incremental build và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Project references, incremental build and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "monorepo",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-071",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Project references, incremental build trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Project references, incremental build, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "monorepo",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-072",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Project references, incremental build như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Project references, incremental build be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "monorepo",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-073",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Type-level performance và compile time.",
+      "en": "Explain the core concept of Type-level performance và compile time."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "performance",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-074",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Type-level performance và compile time và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Type-level performance và compile time and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "performance",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-075",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Type-level performance và compile time trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Type-level performance và compile time, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "performance",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-076",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Type-level performance và compile time như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Type-level performance và compile time be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "performance",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-077",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của JS -> TS migration chiến lược.",
+      "en": "Explain the core concept of JS -> TS migration chiến lược."
+    },
+    "answer": {
+      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "migration",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-078",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của JS -> TS migration chiến lược và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of JS -> TS migration chiến lược and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "migration",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-079",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của JS -> TS migration chiến lược trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in JS -> TS migration chiến lược, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "migration",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-080",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng JS -> TS migration chiến lược như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should JS -> TS migration chiến lược be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "migration",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-081",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Branded types, nominal tricks.",
+      "en": "Explain the core concept of Branded types, nominal tricks."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "domain-model",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-082",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Branded types, nominal tricks và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Branded types, nominal tricks and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "domain-model",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-083",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Branded types, nominal tricks trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Branded types, nominal tricks, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "domain-model",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-084",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Branded types, nominal tricks như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Branded types, nominal tricks be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "domain-model",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-085",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Lint rules và quality gates.",
+      "en": "Explain the core concept of Lint rules và quality gates."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "tooling",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-086",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Lint rules và quality gates và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Lint rules và quality gates and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "tooling",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-087",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Lint rules và quality gates trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Lint rules và quality gates, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "tooling",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-088",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Lint rules và quality gates như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Lint rules và quality gates be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "tooling",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-089",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Type-safe permission/sanitization.",
+      "en": "Explain the core concept of Type-safe permission/sanitization."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "security-types",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-090",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Type-safe permission/sanitization và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Type-safe permission/sanitization and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "security-types",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-091",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Type-safe permission/sanitization trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Type-safe permission/sanitization, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "security-types",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-092",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Type-safe permission/sanitization như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Type-safe permission/sanitization be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "security-types",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-093",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Typed i18n keys và route params.",
+      "en": "Explain the core concept of Typed i18n keys và route params."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "i18n-types",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-094",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Typed i18n keys và route params và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Typed i18n keys và route params and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "i18n-types",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-095",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Typed i18n keys và route params trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Typed i18n keys và route params, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "i18n-types",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-096",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Typed i18n keys và route params như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Typed i18n keys và route params be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "i18n-types",
+      "architecture"
+    ]
+  },
+  {
+    "id": "ts-deep-097",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Public API types, compatibility.",
+      "en": "Explain the core concept of Public API types, compatibility."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "library-design",
+      "concept"
+    ]
+  },
+  {
+    "id": "ts-deep-098",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Public API types, compatibility và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Public API types, compatibility and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "library-design",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "ts-deep-099",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Public API types, compatibility trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Public API types, compatibility, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "library-design",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "ts-deep-100",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Public API types, compatibility như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Public API types, compatibility be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "library-design",
+      "architecture"
+    ]
   }
 ]
