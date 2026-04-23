@@ -149,14 +149,6 @@ export default function App() {
 
   return (
     <main className="app">
-      <header className="app-header glass-surface">
-        <div>
-          <p className="eyebrow">Flashcards learning</p>
-          <h1>Learning Dashboard</h1>
-        </div>
-        <span className="header-chip">{tab.toUpperCase()}</span>
-      </header>
-
       {tab === 'dashboard' && (
         <section className="panel">
           <h2>Dashboard học tập</h2>
