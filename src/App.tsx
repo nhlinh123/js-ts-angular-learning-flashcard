@@ -186,22 +186,6 @@ export default function App() {
 
   return (
     <main className="app">
-      <section className="panel install-panel">
-        <h2>Cài đặt app (PWA)</h2>
-        {installPrompt ? (
-          <>
-            <p className="hint">App đã sẵn sàng để cài. Nhấn nút bên dưới để hiện prompt install.</p>
-            <button onClick={() => void handleInstallApp()}>Install app</button>
-          </>
-        ) : (
-          <p className="hint">
-            {installStatus === 'accepted'
-              ? 'App đã được cài trên thiết bị của bạn.'
-              : 'Chưa đủ điều kiện cài PWA. Hãy mở bản production (HTTPS) hoặc chạy build preview rồi tải lại trang.'}
-          </p>
-        )}
-      </section>
-
       {tab === 'dashboard' && (
         <section className="panel">
           <h2>Dashboard học tập</h2>
