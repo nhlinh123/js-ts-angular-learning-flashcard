@@ -7,7 +7,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['vite.svg'],
       manifest: {
         name: 'JS/TS/Angular Flashcards',
         short_name: 'JTA Flashcards',
