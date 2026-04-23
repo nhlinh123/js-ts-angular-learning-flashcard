@@ -1,41 +1,1702 @@
 [
   {
-    "id": "js-closure-01",
+    "id": "js-deep-001",
     "question": {
-      "vi": "Closure trong JavaScript là gì? Cho ví dụ thực tế.",
-      "en": "What is a closure in JavaScript? Give a practical example."
+      "vi": "Giải thích khái niệm cốt lõi của Closure và lexical scope.",
+      "en": "Explain the core concept of Closure và lexical scope."
     },
     "answer": {
-      "vi": "Closure là khi function ghi nhớ lexical scope nơi nó được tạo. Ví dụ factory function trả về hàm tăng biến private count.",
-      "en": "A closure is when a function keeps access to its lexical scope after the outer function returns. Example: a factory returning an increment function with a private count."
+      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "beginner",
-    "tags": ["javascript", "closure", "scope"]
+    "tags": [
+      "javascript",
+      "closure",
+      "concept"
+    ]
   },
   {
-    "id": "js-event-loop-01",
+    "id": "js-deep-002",
     "question": {
-      "vi": "Event loop hoạt động thế nào giữa call stack, microtask queue và macrotask queue?",
-      "en": "How does the event loop work with call stack, microtask queue, and macrotask queue?"
+      "vi": "Mô tả cơ chế hoạt động bên trong của Closure và lexical scope và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Closure và lexical scope and key execution order."
     },
     "answer": {
-      "vi": "Engine chạy call stack trước. Sau mỗi tick, microtask (Promise callbacks) được ưu tiên xử lý trước khi lấy macrotask tiếp theo (setTimeout, I/O).",
-      "en": "The engine runs the call stack first. After each tick, microtasks (Promise callbacks) are drained before the next macrotask (setTimeout, I/O)."
+      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "intermediate",
-    "tags": ["javascript", "event-loop", "async"]
+    "tags": [
+      "javascript",
+      "closure",
+      "mechanism"
+    ]
   },
   {
-    "id": "js-this-01",
+    "id": "js-deep-003",
     "question": {
-      "vi": "So sánh this trong regular function, arrow function, và method binding.",
-      "en": "Compare this in regular functions, arrow functions, and bound methods."
+      "vi": "Các lỗi/edge cases phổ biến của Closure và lexical scope trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Closure và lexical scope, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Regular function phụ thuộc call-site. Arrow function lấy lexical this từ scope cha. bind/call/apply có thể ép this cho regular function.",
-      "en": "Regular function this depends on call-site. Arrow functions capture lexical this. bind/call/apply can set this for regular functions."
+      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "closure",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-004",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Closure và lexical scope như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Closure và lexical scope be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Closure và lexical scope. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Closure và lexical scope. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
     },
     "level": "advanced",
-    "tags": ["javascript", "this", "oop"]
+    "tags": [
+      "javascript",
+      "closure",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-005",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Event loop, microtask, macrotask.",
+      "en": "Explain the core concept of Event loop, microtask, macrotask."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "event-loop",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-006",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Event loop, microtask, macrotask và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Event loop, microtask, macrotask and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "event-loop",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-007",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Event loop, microtask, macrotask trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Event loop, microtask, macrotask, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "event-loop",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-008",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Event loop, microtask, macrotask như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Event loop, microtask, macrotask be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event loop, microtask, macrotask. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event loop, microtask, macrotask. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "event-loop",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-009",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của this binding và arrow function.",
+      "en": "Explain the core concept of this binding và arrow function."
+    },
+    "answer": {
+      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "this-binding",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-010",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của this binding và arrow function và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of this binding và arrow function and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "this-binding",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-011",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của this binding và arrow function trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in this binding và arrow function, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "this-binding",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-012",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng this binding và arrow function như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should this binding và arrow function be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: this binding và arrow function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: this binding và arrow function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "this-binding",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-013",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Prototype chain và class.",
+      "en": "Explain the core concept of Prototype chain và class."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "prototype",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-014",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Prototype chain và class và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Prototype chain và class and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "prototype",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-015",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Prototype chain và class trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Prototype chain và class, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "prototype",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-016",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Prototype chain và class như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Prototype chain và class be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Prototype chain và class. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Prototype chain và class. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "prototype",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-017",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Promise, async/await, error handling.",
+      "en": "Explain the core concept of Promise, async/await, error handling."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "promise",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-018",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Promise, async/await, error handling và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Promise, async/await, error handling and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "promise",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-019",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Promise, async/await, error handling trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Promise, async/await, error handling, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "promise",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-020",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Promise, async/await, error handling như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Promise, async/await, error handling be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Promise, async/await, error handling. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Promise, async/await, error handling. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "promise",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-021",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Memory leak và garbage collection.",
+      "en": "Explain the core concept of Memory leak và garbage collection."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "memory",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-022",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Memory leak và garbage collection và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Memory leak và garbage collection and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "memory",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-023",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Memory leak và garbage collection trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Memory leak và garbage collection, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "memory",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-024",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Memory leak và garbage collection như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Memory leak và garbage collection be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Memory leak và garbage collection. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Memory leak và garbage collection. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "memory",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-025",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Tối ưu hiệu năng render và JS runtime.",
+      "en": "Explain the core concept of Tối ưu hiệu năng render và JS runtime."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "performance",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-026",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Tối ưu hiệu năng render và JS runtime và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Tối ưu hiệu năng render và JS runtime and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "performance",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-027",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Tối ưu hiệu năng render và JS runtime trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Tối ưu hiệu năng render và JS runtime, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "performance",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-028",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Tối ưu hiệu năng render và JS runtime như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Tối ưu hiệu năng render và JS runtime be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Tối ưu hiệu năng render và JS runtime. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Tối ưu hiệu năng render và JS runtime. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "performance",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-029",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của ESM, CommonJS, dynamic import.",
+      "en": "Explain the core concept of ESM, CommonJS, dynamic import."
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "modules",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-030",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của ESM, CommonJS, dynamic import và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of ESM, CommonJS, dynamic import and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "modules",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-031",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của ESM, CommonJS, dynamic import trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in ESM, CommonJS, dynamic import, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "modules",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-032",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng ESM, CommonJS, dynamic import như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should ESM, CommonJS, dynamic import be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: ESM, CommonJS, dynamic import. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: ESM, CommonJS, dynamic import. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "modules",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-033",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Object descriptors, immutability, Proxy.",
+      "en": "Explain the core concept of Object descriptors, immutability, Proxy."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "object-model",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-034",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Object descriptors, immutability, Proxy và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Object descriptors, immutability, Proxy and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "object-model",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-035",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Object descriptors, immutability, Proxy trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Object descriptors, immutability, Proxy, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "object-model",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-036",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Object descriptors, immutability, Proxy như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Object descriptors, immutability, Proxy be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Object descriptors, immutability, Proxy. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Object descriptors, immutability, Proxy. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "object-model",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-037",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Map/Set/WeakMap/WeakSet.",
+      "en": "Explain the core concept of Map/Set/WeakMap/WeakSet."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "collections",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-038",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Map/Set/WeakMap/WeakSet và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Map/Set/WeakMap/WeakSet and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "collections",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-039",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Map/Set/WeakMap/WeakSet trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Map/Set/WeakMap/WeakSet, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "collections",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-040",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Map/Set/WeakMap/WeakSet như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Map/Set/WeakMap/WeakSet be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Map/Set/WeakMap/WeakSet. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Map/Set/WeakMap/WeakSet. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "collections",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-041",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Type coercion, equality, edge cases.",
+      "en": "Explain the core concept of Type coercion, equality, edge cases."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "coercion",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-042",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Type coercion, equality, edge cases và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Type coercion, equality, edge cases and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "coercion",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-043",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Type coercion, equality, edge cases trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Type coercion, equality, edge cases, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "coercion",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-044",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Type coercion, equality, edge cases như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Type coercion, equality, edge cases be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Type coercion, equality, edge cases. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Type coercion, equality, edge cases. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "coercion",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-045",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Fetch, AbortController, Streams.",
+      "en": "Explain the core concept of Fetch, AbortController, Streams."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "browser-api",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-046",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Fetch, AbortController, Streams và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Fetch, AbortController, Streams and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "browser-api",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-047",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Fetch, AbortController, Streams trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Fetch, AbortController, Streams, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "browser-api",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-048",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Fetch, AbortController, Streams như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Fetch, AbortController, Streams be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Fetch, AbortController, Streams. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Fetch, AbortController, Streams. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "browser-api",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-049",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Event delegation, capture/bubble, passive.",
+      "en": "Explain the core concept of Event delegation, capture/bubble, passive."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "dom-events",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-050",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Event delegation, capture/bubble, passive và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Event delegation, capture/bubble, passive and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "dom-events",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-051",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Event delegation, capture/bubble, passive trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Event delegation, capture/bubble, passive, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "dom-events",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-052",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Event delegation, capture/bubble, passive như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Event delegation, capture/bubble, passive be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Event delegation, capture/bubble, passive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Event delegation, capture/bubble, passive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "dom-events",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-053",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Service worker, cache strategy, offline.",
+      "en": "Explain the core concept of Service worker, cache strategy, offline."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "pwa",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-054",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Service worker, cache strategy, offline và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Service worker, cache strategy, offline and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "pwa",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-055",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Service worker, cache strategy, offline trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Service worker, cache strategy, offline, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "pwa",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-056",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Service worker, cache strategy, offline như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Service worker, cache strategy, offline be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Service worker, cache strategy, offline. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Service worker, cache strategy, offline. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "pwa",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-057",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của XSS/CSRF và bảo mật frontend.",
+      "en": "Explain the core concept of XSS/CSRF và bảo mật frontend."
+    },
+    "answer": {
+      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "security",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-058",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của XSS/CSRF và bảo mật frontend và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of XSS/CSRF và bảo mật frontend and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "security",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-059",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của XSS/CSRF và bảo mật frontend trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in XSS/CSRF và bảo mật frontend, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "security",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-060",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng XSS/CSRF và bảo mật frontend như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should XSS/CSRF và bảo mật frontend be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: XSS/CSRF và bảo mật frontend. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: XSS/CSRF và bảo mật frontend. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "security",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-061",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của State management, immutability, optimistic UI.",
+      "en": "Explain the core concept of State management, immutability, optimistic UI."
+    },
+    "answer": {
+      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "state",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-062",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của State management, immutability, optimistic UI và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of State management, immutability, optimistic UI and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "state",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-063",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của State management, immutability, optimistic UI trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in State management, immutability, optimistic UI, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "state",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-064",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng State management, immutability, optimistic UI như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should State management, immutability, optimistic UI be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: State management, immutability, optimistic UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: State management, immutability, optimistic UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "state",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-065",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Test strategy, mock timer, contract test.",
+      "en": "Explain the core concept of Test strategy, mock timer, contract test."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "testing",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-066",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Test strategy, mock timer, contract test và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Test strategy, mock timer, contract test and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "testing",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-067",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Test strategy, mock timer, contract test trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Test strategy, mock timer, contract test, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "testing",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-068",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Test strategy, mock timer, contract test như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Test strategy, mock timer, contract test be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Test strategy, mock timer, contract test. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Test strategy, mock timer, contract test. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "testing",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-069",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Bundling, tree-shaking, source maps.",
+      "en": "Explain the core concept of Bundling, tree-shaking, source maps."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "build",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-070",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Bundling, tree-shaking, source maps và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Bundling, tree-shaking, source maps and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "build",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-071",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Bundling, tree-shaking, source maps trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Bundling, tree-shaking, source maps, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "build",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-072",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Bundling, tree-shaking, source maps như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Bundling, tree-shaking, source maps be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Bundling, tree-shaking, source maps. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Bundling, tree-shaking, source maps. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "build",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-073",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Intl APIs và localization.",
+      "en": "Explain the core concept of Intl APIs và localization."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "i18n",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-074",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Intl APIs và localization và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Intl APIs và localization and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "i18n",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-075",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Intl APIs và localization trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Intl APIs và localization, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "i18n",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-076",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Intl APIs và localization như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Intl APIs và localization be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Intl APIs và localization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Intl APIs và localization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "i18n",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-077",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Retry, backoff, idempotency.",
+      "en": "Explain the core concept of Retry, backoff, idempotency."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "async-patterns",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-078",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Retry, backoff, idempotency và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Retry, backoff, idempotency and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "async-patterns",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-079",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Retry, backoff, idempotency trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Retry, backoff, idempotency, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "async-patterns",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-080",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Retry, backoff, idempotency như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Retry, backoff, idempotency be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Retry, backoff, idempotency. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Retry, backoff, idempotency. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "async-patterns",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-081",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Worker, postMessage, structured clone.",
+      "en": "Explain the core concept of Worker, postMessage, structured clone."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "web-workers",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-082",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Worker, postMessage, structured clone và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Worker, postMessage, structured clone and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "web-workers",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-083",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Worker, postMessage, structured clone trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Worker, postMessage, structured clone, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "web-workers",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-084",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Worker, postMessage, structured clone như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Worker, postMessage, structured clone be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Worker, postMessage, structured clone. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Worker, postMessage, structured clone. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "web-workers",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-085",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Floating point, BigInt, precision.",
+      "en": "Explain the core concept of Floating point, BigInt, precision."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "numbers",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-086",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Floating point, BigInt, precision và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Floating point, BigInt, precision and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "numbers",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-087",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Floating point, BigInt, precision trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Floating point, BigInt, precision, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "numbers",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-088",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Floating point, BigInt, precision như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Floating point, BigInt, precision be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Floating point, BigInt, precision. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Floating point, BigInt, precision. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "numbers",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-089",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của RegExp performance và backtracking.",
+      "en": "Explain the core concept of RegExp performance và backtracking."
+    },
+    "answer": {
+      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "regex",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-090",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của RegExp performance và backtracking và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of RegExp performance và backtracking and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "regex",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-091",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của RegExp performance và backtracking trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in RegExp performance và backtracking, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "regex",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-092",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng RegExp performance và backtracking như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should RegExp performance và backtracking be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: RegExp performance và backtracking. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: RegExp performance và backtracking. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "regex",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-093",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của LocalStorage, IndexedDB, quota.",
+      "en": "Explain the core concept of LocalStorage, IndexedDB, quota."
+    },
+    "answer": {
+      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "storage",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-094",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của LocalStorage, IndexedDB, quota và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of LocalStorage, IndexedDB, quota and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "storage",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-095",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của LocalStorage, IndexedDB, quota trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in LocalStorage, IndexedDB, quota, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "storage",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-096",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng LocalStorage, IndexedDB, quota như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should LocalStorage, IndexedDB, quota be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: LocalStorage, IndexedDB, quota. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: LocalStorage, IndexedDB, quota. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "storage",
+      "architecture"
+    ]
+  },
+  {
+    "id": "js-deep-097",
+    "question": {
+      "vi": "Giải thích khái niệm cốt lõi của Patterns, DI, observability.",
+      "en": "Explain the core concept of Patterns, DI, observability."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "beginner",
+    "tags": [
+      "javascript",
+      "architecture",
+      "concept"
+    ]
+  },
+  {
+    "id": "js-deep-098",
+    "question": {
+      "vi": "Mô tả cơ chế hoạt động bên trong của Patterns, DI, observability và thứ tự xử lý quan trọng.",
+      "en": "Describe the internal mechanism of Patterns, DI, observability and key execution order."
+    },
+    "answer": {
+      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "architecture",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "js-deep-099",
+    "question": {
+      "vi": "Các lỗi/edge cases phổ biến của Patterns, DI, observability trong production là gì và cách tránh?",
+      "en": "What common production pitfalls/edge cases exist in Patterns, DI, observability, and how do you avoid them?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "intermediate",
+    "tags": [
+      "javascript",
+      "architecture",
+      "pitfalls"
+    ]
+  },
+  {
+    "id": "js-deep-100",
+    "question": {
+      "vi": "Khi thiết kế hệ thống thực tế, áp dụng Patterns, DI, observability như thế nào để dễ bảo trì và test?",
+      "en": "In real system design, how should Patterns, DI, observability be applied for maintainability and testability?"
+    },
+    "answer": {
+      "vi": "Trọng tâm: Patterns, DI, observability. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
+      "en": "Focus: Patterns, DI, observability. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+    },
+    "level": "advanced",
+    "tags": [
+      "javascript",
+      "architecture",
+      "architecture"
+    ]
   }
 ]

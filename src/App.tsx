@@ -179,6 +179,45 @@ export default function App() {
       )}
 
       {tab === 'learning' && (
+        <section className="panel learning-screen">
+          <div className="learning-head">
+            <h2>
+              Due: {dueLimited.length} / Tổng selected: {cards.length}
+            </h2>
+            <p className="hint">Swipe: ← Again · ↓ Hard · → Good · ↑ Easy</p>
+          </div>
+
+          {!current ? (
+            <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
+          ) : (
+            <article
+              className={`flashcard flashcard-full ${flipped ? 'flipped' : ''}`}
+              onClick={() => setFlipped((v) => !v)}
+              onPointerDown={onPointerDown}
+              onPointerMove={onPointerMove}
+              onPointerUp={() => void onPointerUp()}
+              style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
+            >
+              <p className="meta">
+                {current.bankTitle} · {current.card.level}
+              </p>
+              {!flipped ? (
+                <>
+                  <h3>{current.card.question[language]}</h3>
+                  <p className="hint">Tap để flip card.</p>
+                </>
+              ) : (
+                <>
+                  <h3>{current.card.answer[language]}</h3>
+                  <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
+                </>
+              )}
+            </article>
+          )}
+        </section>
+      )}
+
+      {tab === 'settings' && (
         <>
           <section className="panel">
             <h2>Chọn bộ câu hỏi (JSON)</h2>
@@ -200,80 +239,42 @@ export default function App() {
               ))}
             </div>
           </section>
-
           <section className="panel">
-            <h2>
-              Due: {dueLimited.length} / Tổng selected: {cards.length}
-            </h2>
-            <p className="hint">Swipe: ← Again · ↓ Hard · → Good · ↑ Easy</p>
-
-            {!current ? (
-              <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
-            ) : (
-              <article
-                className={`flashcard ${flipped ? 'flipped' : ''}`}
-                onClick={() => setFlipped((v) => !v)}
-                onPointerDown={onPointerDown}
-                onPointerMove={onPointerMove}
-                onPointerUp={() => void onPointerUp()}
-                style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
+            <h2>Settings</h2>
+            <div className="settings-row">
+              <label htmlFor="language">Ngôn ngữ câu hỏi</label>
+              <select
+                id="language"
+                value={language}
+                onChange={(e) => setLanguage(e.target.value as Language)}
               >
-                <p className="meta">
-                  {current.bankTitle} · {current.card.level}
-                </p>
-                {!flipped ? (
-                  <>
-                    <h3>{current.card.question[language]}</h3>
-                    <p className="hint">Tap để flip card.</p>
-                  </>
-                ) : (
-                  <>
-                    <h3>{current.card.answer[language]}</h3>
-                    <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
-                  </>
-                )}
-              </article>
-            )}
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+
+            <div className="settings-row">
+              <label htmlFor="dailyTarget">Số thẻ tối đa / ngày</label>
+              <input
+                id="dailyTarget"
+                type="number"
+                min={5}
+                max={200}
+                value={dailyTarget}
+                onChange={(e) => setDailyTarget(Number(e.target.value || 20))}
+              />
+            </div>
+
+            <label className="mix-toggle">
+              <input
+                type="checkbox"
+                checked={mixedMode}
+                onChange={(e) => setMixedMode(e.target.checked)}
+              />
+              Bật chế độ trộn câu hỏi (mix mode)
+            </label>
           </section>
         </>
-      )}
-
-      {tab === 'settings' && (
-        <section className="panel">
-          <h2>Settings</h2>
-          <div className="settings-row">
-            <label htmlFor="language">Ngôn ngữ câu hỏi</label>
-            <select
-              id="language"
-              value={language}
-              onChange={(e) => setLanguage(e.target.value as Language)}
-            >
-              <option value="vi">Tiếng Việt</option>
-              <option value="en">English</option>
-            </select>
-          </div>
-
-          <div className="settings-row">
-            <label htmlFor="dailyTarget">Số thẻ tối đa / ngày</label>
-            <input
-              id="dailyTarget"
-              type="number"
-              min={5}
-              max={200}
-              value={dailyTarget}
-              onChange={(e) => setDailyTarget(Number(e.target.value || 20))}
-            />
-          </div>
-
-          <label className="mix-toggle">
-            <input
-              type="checkbox"
-              checked={mixedMode}
-              onChange={(e) => setMixedMode(e.target.checked)}
-            />
-            Bật chế độ trộn câu hỏi (mix mode)
-          </label>
-        </section>
       )}
 
       <nav className="bottom-nav">

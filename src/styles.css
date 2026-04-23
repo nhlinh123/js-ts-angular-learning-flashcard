@@ -1,7 +1,16 @@
 :root {
-  font-family: Inter, system-ui, Arial, sans-serif;
-  color: #e2e8f0;
-  background: #0f172a;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #1c1c1e;
+  background: #f5f5f7;
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --surface-muted: #f2f2f5;
+  --text: #1c1c1e;
+  --subtle: #5d6470;
+  --border: #d7d9de;
+  --accent: #0a84ff;
+  --glass: rgba(255, 255, 255, 0.16);
+  --shadow-soft: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -11,20 +20,23 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: #0f172a;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .app {
-  max-width: 980px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 20px 16px 90px;
+  padding: 12px 12px 120px;
 }
 
 .panel {
-  background: #1e293b;
-  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
   padding: 16px;
   margin-bottom: 16px;
+  box-shadow: var(--shadow-soft);
 }
 
 .bank-list {
@@ -36,31 +48,56 @@ body {
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
 }
 
 .bank-item small,
 .hint {
   display: block;
-  color: #94a3b8;
+  color: var(--subtle);
 }
 
 .flashcard {
-  background: linear-gradient(140deg, #1d4ed8, #7c3aed);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 18px;
   min-height: 220px;
   transition: transform 0.2s ease;
   touch-action: none;
   cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+
+.learning-screen {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+}
+
+.learning-head {
+  margin-bottom: 10px;
+}
+
+.flashcard-full {
+  flex: 1;
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flashcard.flipped {
-  background: linear-gradient(140deg, #0f766e, #16a34a);
+  border-color: rgba(10, 132, 255, 0.45);
 }
 
 .meta {
-  color: #dbeafe;
+  color: #0357ad;
   margin: 0 0 8px;
+  font-weight: 600;
 }
 
 .stats-grid {
@@ -70,8 +107,8 @@ body {
 }
 
 .stats-grid article {
-  background: #0b1220;
-  border: 1px solid #334155;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 10px;
 }
@@ -96,30 +133,59 @@ body {
 input,
 select,
 button {
-  border: 0;
-  border-radius: 8px;
-  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
 }
 
 .bottom-nav {
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 520px);
   bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 10px;
-  background: rgba(15, 23, 42, 0.96);
-  border-top: 1px solid #334155;
+  margin-bottom: max(8px, env(safe-area-inset-bottom));
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
 }
 
 .bottom-nav button {
-  background: #334155;
-  color: #e2e8f0;
+  background: var(--surface);
 }
 
 .bottom-nav button.active {
-  background: #3b82f6;
+  background: var(--accent);
   color: #ffffff;
+  border-color: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f2f2f7;
+    background: #0f1115;
+    --bg: #0f1115;
+    --surface: #1c1c1e;
+    --surface-muted: #232326;
+    --text: #f2f2f7;
+    --subtle: #a0a5b1;
+    --border: #313338;
+    --glass: rgba(255, 255, 255, 0.16);
+  }
+  .meta {
+    color: #79bbff;
+  }
 }
