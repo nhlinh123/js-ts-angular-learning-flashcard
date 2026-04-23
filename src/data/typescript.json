@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "ts-001",
+    "question": {
+      "vi": "[1] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[1] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-002",
+    "question": {
+      "vi": "[2] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[2] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-003",
+    "question": {
+      "vi": "[3] unknown khác any thế nào? (typescript)",
+      "en": "[3] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-004",
+    "question": {
+      "vi": "[4] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[4] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-005",
+    "question": {
+      "vi": "[5] Discriminated union là gì? (typescript)",
+      "en": "[5] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-006",
+    "question": {
+      "vi": "[6] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[6] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-007",
+    "question": {
+      "vi": "[7] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[7] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-008",
+    "question": {
+      "vi": "[8] Type guard là gì? (typescript)",
+      "en": "[8] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-009",
+    "question": {
+      "vi": "[9] Mapped type là gì? (typescript)",
+      "en": "[9] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-010",
+    "question": {
+      "vi": "[10] never biểu diễn điều gì? (typescript)",
+      "en": "[10] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-011",
+    "question": {
+      "vi": "[11] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[11] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-012",
+    "question": {
+      "vi": "[12] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[12] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-013",
+    "question": {
+      "vi": "[13] unknown khác any thế nào? (typescript)",
+      "en": "[13] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-014",
+    "question": {
+      "vi": "[14] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[14] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-015",
+    "question": {
+      "vi": "[15] Discriminated union là gì? (typescript)",
+      "en": "[15] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-016",
+    "question": {
+      "vi": "[16] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[16] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-017",
+    "question": {
+      "vi": "[17] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[17] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-018",
+    "question": {
+      "vi": "[18] Type guard là gì? (typescript)",
+      "en": "[18] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-019",
+    "question": {
+      "vi": "[19] Mapped type là gì? (typescript)",
+      "en": "[19] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-020",
+    "question": {
+      "vi": "[20] never biểu diễn điều gì? (typescript)",
+      "en": "[20] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-021",
+    "question": {
+      "vi": "[21] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[21] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-022",
+    "question": {
+      "vi": "[22] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[22] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-023",
+    "question": {
+      "vi": "[23] unknown khác any thế nào? (typescript)",
+      "en": "[23] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-024",
+    "question": {
+      "vi": "[24] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[24] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-025",
+    "question": {
+      "vi": "[25] Discriminated union là gì? (typescript)",
+      "en": "[25] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-026",
+    "question": {
+      "vi": "[26] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[26] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-027",
+    "question": {
+      "vi": "[27] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[27] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-028",
+    "question": {
+      "vi": "[28] Type guard là gì? (typescript)",
+      "en": "[28] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-029",
+    "question": {
+      "vi": "[29] Mapped type là gì? (typescript)",
+      "en": "[29] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-030",
+    "question": {
+      "vi": "[30] never biểu diễn điều gì? (typescript)",
+      "en": "[30] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-031",
+    "question": {
+      "vi": "[31] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[31] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-032",
+    "question": {
+      "vi": "[32] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[32] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-033",
+    "question": {
+      "vi": "[33] unknown khác any thế nào? (typescript)",
+      "en": "[33] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-034",
+    "question": {
+      "vi": "[34] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[34] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-035",
+    "question": {
+      "vi": "[35] Discriminated union là gì? (typescript)",
+      "en": "[35] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-036",
+    "question": {
+      "vi": "[36] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[36] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-037",
+    "question": {
+      "vi": "[37] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[37] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-038",
+    "question": {
+      "vi": "[38] Type guard là gì? (typescript)",
+      "en": "[38] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-039",
+    "question": {
+      "vi": "[39] Mapped type là gì? (typescript)",
+      "en": "[39] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-040",
+    "question": {
+      "vi": "[40] never biểu diễn điều gì? (typescript)",
+      "en": "[40] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-041",
+    "question": {
+      "vi": "[41] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[41] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-042",
+    "question": {
+      "vi": "[42] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[42] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-043",
+    "question": {
+      "vi": "[43] unknown khác any thế nào? (typescript)",
+      "en": "[43] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-044",
+    "question": {
+      "vi": "[44] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[44] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-045",
+    "question": {
+      "vi": "[45] Discriminated union là gì? (typescript)",
+      "en": "[45] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-046",
+    "question": {
+      "vi": "[46] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[46] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-047",
+    "question": {
+      "vi": "[47] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[47] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-048",
+    "question": {
+      "vi": "[48] Type guard là gì? (typescript)",
+      "en": "[48] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-049",
+    "question": {
+      "vi": "[49] Mapped type là gì? (typescript)",
+      "en": "[49] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-050",
+    "question": {
+      "vi": "[50] never biểu diễn điều gì? (typescript)",
+      "en": "[50] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-051",
+    "question": {
+      "vi": "[51] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[51] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-052",
+    "question": {
+      "vi": "[52] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[52] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-053",
+    "question": {
+      "vi": "[53] unknown khác any thế nào? (typescript)",
+      "en": "[53] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-054",
+    "question": {
+      "vi": "[54] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[54] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-055",
+    "question": {
+      "vi": "[55] Discriminated union là gì? (typescript)",
+      "en": "[55] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-056",
+    "question": {
+      "vi": "[56] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[56] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-057",
+    "question": {
+      "vi": "[57] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[57] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-058",
+    "question": {
+      "vi": "[58] Type guard là gì? (typescript)",
+      "en": "[58] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-059",
+    "question": {
+      "vi": "[59] Mapped type là gì? (typescript)",
+      "en": "[59] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-060",
+    "question": {
+      "vi": "[60] never biểu diễn điều gì? (typescript)",
+      "en": "[60] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-061",
+    "question": {
+      "vi": "[61] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[61] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-062",
+    "question": {
+      "vi": "[62] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[62] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-063",
+    "question": {
+      "vi": "[63] unknown khác any thế nào? (typescript)",
+      "en": "[63] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-064",
+    "question": {
+      "vi": "[64] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[64] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-065",
+    "question": {
+      "vi": "[65] Discriminated union là gì? (typescript)",
+      "en": "[65] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-066",
+    "question": {
+      "vi": "[66] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[66] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-067",
+    "question": {
+      "vi": "[67] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[67] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-068",
+    "question": {
+      "vi": "[68] Type guard là gì? (typescript)",
+      "en": "[68] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-069",
+    "question": {
+      "vi": "[69] Mapped type là gì? (typescript)",
+      "en": "[69] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-070",
+    "question": {
+      "vi": "[70] never biểu diễn điều gì? (typescript)",
+      "en": "[70] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-071",
+    "question": {
+      "vi": "[71] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[71] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-072",
+    "question": {
+      "vi": "[72] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[72] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-073",
+    "question": {
+      "vi": "[73] unknown khác any thế nào? (typescript)",
+      "en": "[73] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-074",
+    "question": {
+      "vi": "[74] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[74] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-075",
+    "question": {
+      "vi": "[75] Discriminated union là gì? (typescript)",
+      "en": "[75] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-076",
+    "question": {
+      "vi": "[76] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[76] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-077",
+    "question": {
+      "vi": "[77] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[77] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-078",
+    "question": {
+      "vi": "[78] Type guard là gì? (typescript)",
+      "en": "[78] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-079",
+    "question": {
+      "vi": "[79] Mapped type là gì? (typescript)",
+      "en": "[79] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-080",
+    "question": {
+      "vi": "[80] never biểu diễn điều gì? (typescript)",
+      "en": "[80] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-081",
+    "question": {
+      "vi": "[81] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[81] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-082",
+    "question": {
+      "vi": "[82] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[82] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-083",
+    "question": {
+      "vi": "[83] unknown khác any thế nào? (typescript)",
+      "en": "[83] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-084",
+    "question": {
+      "vi": "[84] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[84] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-085",
+    "question": {
+      "vi": "[85] Discriminated union là gì? (typescript)",
+      "en": "[85] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-086",
+    "question": {
+      "vi": "[86] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[86] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-087",
+    "question": {
+      "vi": "[87] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[87] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-088",
+    "question": {
+      "vi": "[88] Type guard là gì? (typescript)",
+      "en": "[88] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-089",
+    "question": {
+      "vi": "[89] Mapped type là gì? (typescript)",
+      "en": "[89] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-090",
+    "question": {
+      "vi": "[90] never biểu diễn điều gì? (typescript)",
+      "en": "[90] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-091",
+    "question": {
+      "vi": "[91] TypeScript interface và type alias khác nhau như thế nào? (typescript)",
+      "en": "[91] TypeScript interface và type alias khác nhau how does it work? (typescript)"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types.",
+      "en": "Interface hỗ trợ declaration merging; type alias linh hoạt cho union và mapped/conditional types."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-092",
+    "question": {
+      "vi": "[92] Generic constraint dùng để làm gì? (typescript)",
+      "en": "[92] Generic constraint dùng để làm gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu.",
+      "en": "Giới hạn kiểu generic để compiler đảm bảo API an toàn kiểu dữ liệu."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-093",
+    "question": {
+      "vi": "[93] unknown khác any thế nào? (typescript)",
+      "en": "[93] unknown khác any thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking.",
+      "en": "unknown an toàn hơn vì cần narrowing trước khi dùng; any bỏ qua type checking."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-094",
+    "question": {
+      "vi": "[94] Utility type Partial hoạt động ra sao? (typescript)",
+      "en": "[94] Utility type Partial hoạt động ra sao? (typescript)"
+    },
+    "answer": {
+      "vi": "Partial<T> biến mọi thuộc tính của T thành optional.",
+      "en": "Partial<T> biến mọi thuộc tính của T thành optional."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-095",
+    "question": {
+      "vi": "[95] Discriminated union là gì? (typescript)",
+      "en": "[95] Discriminated union ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Union có trường phân biệt giúp narrowing chính xác qua control flow.",
+      "en": "Union có trường phân biệt giúp narrowing chính xác qua control flow."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-096",
+    "question": {
+      "vi": "[96] infer trong conditional type dùng thế nào? (typescript)",
+      "en": "[96] infer trong conditional type dùng thế nào? (typescript)"
+    },
+    "answer": {
+      "vi": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type.",
+      "en": "infer trích xuất kiểu con từ kiểu phức tạp trong conditional type."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-097",
+    "question": {
+      "vi": "[97] Readonly và immutability có liên quan gì? (typescript)",
+      "en": "[97] Readonly và immutability có liên quan gì? (typescript)"
+    },
+    "answer": {
+      "vi": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable.",
+      "en": "Readonly chặn gán lại ở compile time, hỗ trợ mô hình immutable."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ts-098",
+    "question": {
+      "vi": "[98] Type guard là gì? (typescript)",
+      "en": "[98] Type guard ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function.",
+      "en": "Type guard thu hẹp kiểu bằng predicate như typeof, in, instanceof hoặc custom function."
+    },
+    "level": "intermediate",
+    "tags": [
+      "typescript",
+      "intermediate"
+    ]
+  },
+  {
+    "id": "ts-099",
+    "question": {
+      "vi": "[99] Mapped type là gì? (typescript)",
+      "en": "[99] Mapped type ?? (typescript)"
+    },
+    "answer": {
+      "vi": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc.",
+      "en": "Tạo kiểu mới bằng cách map qua keys của kiểu gốc."
+    },
+    "level": "advanced",
+    "tags": [
+      "typescript",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ts-100",
+    "question": {
+      "vi": "[100] never biểu diễn điều gì? (typescript)",
+      "en": "[100] never biểu diễn điều gì? (typescript)"
+    },
+    "answer": {
+      "vi": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return.",
+      "en": "never biểu diễn giá trị không thể tồn tại hoặc hàm không bao giờ return."
+    },
+    "level": "beginner",
+    "tags": [
+      "typescript",
+      "beginner"
+    ]
+  }
+]
