@@ -28,6 +28,7 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 16px 16px 112px;
+  min-height: 100dvh;
 }
 
 .panel {
@@ -37,6 +38,22 @@ body {
   padding: 16px;
   margin-bottom: 16px;
   box-shadow: var(--shadow-soft);
+}
+
+.learning-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 140px);
+}
+
+.learning-head h2 {
+  margin-top: 0;
+}
+
+.learning-content {
+  display: flex;
+  flex: 1;
+  margin-top: 6px;
 }
 
 .bank-list {
@@ -70,6 +87,15 @@ body {
   touch-action: none;
   cursor: pointer;
   box-shadow: var(--shadow-soft);
+}
+
+.flashcard-full {
+  width: 100%;
+  min-height: clamp(260px, 50dvh, 640px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flashcard.flipped {
@@ -172,5 +198,25 @@ button {
 
   .meta {
     color: #79bbff;
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 12px 12px 104px;
+  }
+
+  .panel {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .learning-screen {
+    min-height: calc(100dvh - 124px);
+  }
+
+  .flashcard-full {
+    min-height: clamp(240px, 52dvh, 560px);
+    padding: 16px;
   }
 }
