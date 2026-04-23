@@ -44,6 +44,7 @@ export default function App() {
   const [startPoint, setStartPoint] = useState<{ x: number; y: number } | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+  const [installStatus, setInstallStatus] = useState<'idle' | 'accepted' | 'dismissed'>('idle');
 
   useEffect(() => {
     const allBanks = source.listBanks();
@@ -75,10 +76,12 @@ export default function App() {
     const onBeforeInstallPrompt = (event: Event) => {
       event.preventDefault();
       setInstallPrompt(event as BeforeInstallPromptEvent);
+      setInstallStatus('idle');
     };
 
     const onAppInstalled = () => {
       setInstallPrompt(null);
+      setInstallStatus('accepted');
     };
 
     window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt);
@@ -173,21 +176,31 @@ export default function App() {
     if (!installPrompt) return;
 
     await installPrompt.prompt();
-    const { outcome } = await installPrompt.userChoice;
+    const choice = await installPrompt.userChoice;
+    setInstallStatus(choice.outcome);
 
-    if (outcome === 'accepted') {
+    if (choice.outcome === 'accepted') {
       setInstallPrompt(null);
     }
   };
 
   return (
     <main className="app">
-      {installPrompt && (
-        <section className="panel install-panel">
-          <h2>Cài đặt app (PWA)</h2>
-          <button onClick={() => void handleInstallApp()}>Install app</button>
-        </section>
-      )}
+      <section className="panel install-panel">
+        <h2>Cài đặt app (PWA)</h2>
+        {installPrompt ? (
+          <>
+            <p className="hint">App đã sẵn sàng để cài. Nhấn nút bên dưới để hiện prompt install.</p>
+            <button onClick={() => void handleInstallApp()}>Install app</button>
+          </>
+        ) : (
+          <p className="hint">
+            {installStatus === 'accepted'
+              ? 'App đã được cài trên thiết bị của bạn.'
+              : 'Chưa đủ điều kiện cài PWA. Hãy mở bản production (HTTPS) hoặc chạy build preview rồi tải lại trang.'}
+          </p>
+        )}
+      </section>
 
       {tab === 'dashboard' && (
         <section className="panel">
