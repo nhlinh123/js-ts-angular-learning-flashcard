@@ -107,8 +107,9 @@ body {
   justify-content: center;
 }
 
-.flashcard.flipped {
-  border-color: rgba(10, 132, 255, 0.45);
+.answer {
+  margin: 0 0 12px;
+  line-height: 1.5;
 }
 
 .meta {

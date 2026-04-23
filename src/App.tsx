@@ -38,7 +38,6 @@ export default function App() {
   const [cards, setCards] = useState<FlashcardWithBank[]>([]);
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [flipped, setFlipped] = useState(false);
   const [mixedMode, setMixedMode] = useState(true);
   const [language, setLanguage] = useState<Language>('vi');
   const [dailyTarget, setDailyTarget] = useState(20);
@@ -103,7 +102,6 @@ export default function App() {
     void source.loadMultipleBanks(selectedBanks).then((loaded) => {
       setCards(mixedMode ? shuffle(loaded) : loaded);
       setCurrentIndex(0);
-      setFlipped(false);
     });
   }, [selectedBanks, mixedMode]);
 
@@ -144,7 +142,6 @@ export default function App() {
 
     await saveProgress(updated);
     setProgress((prev) => ({ ...prev, [key]: updated }));
-    setFlipped(false);
     setDragOffset({ x: 0, y: 0 });
     setCurrentIndex((prev) => (dueLimited.length <= 1 ? 0 : (prev + 1) % dueLimited.length));
   };
@@ -154,12 +151,12 @@ export default function App() {
   };
 
   const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
-    if (!startPoint || !flipped) return;
+    if (!startPoint) return;
     setDragOffset({ x: event.clientX - startPoint.x, y: event.clientY - startPoint.y });
   };
 
   const onPointerUp = async () => {
-    if (!startPoint || !flipped) {
+    if (!startPoint) {
       setStartPoint(null);
       return;
     }
@@ -248,8 +245,7 @@ export default function App() {
               <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
             ) : (
               <article
-                className={`flashcard flashcard-full ${flipped ? 'flipped' : ''}`}
-                onClick={() => setFlipped((v) => !v)}
+                className="flashcard flashcard-full"
                 onPointerDown={onPointerDown}
                 onPointerMove={onPointerMove}
                 onPointerUp={() => void onPointerUp()}
@@ -258,17 +254,9 @@ export default function App() {
                 <p className="meta">
                   {current.bankTitle} · {current.card.level}
                 </p>
-                {!flipped ? (
-                  <>
-                    <h3>{current.card.question[language]}</h3>
-                    <p className="hint">Tap để flip card.</p>
-                  </>
-                ) : (
-                  <>
-                    <h3>{current.card.answer[language]}</h3>
-                    <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
-                  </>
-                )}
+                <h3>{current.card.question[language]}</h3>
+                <p className="answer">{current.card.answer[language]}</p>
+                <p className="hint">Swipe để chấm mức ghi nhớ: ← Again · ↓ Hard · → Good · ↑ Easy.</p>
               </article>
             )}
           </div>
