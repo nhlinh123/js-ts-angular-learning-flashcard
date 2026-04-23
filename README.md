@@ -1,35 +1,33 @@
 # JS / TS / Angular Interview Flashcards (PWA)
 
-Ứng dụng flashcard active recall + spaced repetition với giao diện theo phong cách **Apple Crystal / Functional Glass**.
+Ứng dụng flashcard theo **active recall + spaced repetition** cho lộ trình phỏng vấn JavaScript, TypeScript, Angular và Problem Solving.
 
-## UI cập nhật
+## Điểm chính
 
+- PWA (cài như app trên mobile/desktop).
 - Bottom nav gồm 3 tab: `Dashboard`, `Learning`, `Settings`.
-- Chỉ dùng glass cho: header + tab bar.
-- Nội dung chính dùng solid surfaces: `#FFFFFF` / `#1C1C1E`.
-- Accent color: `#0A84FF`.
-- Tab Learning hiển thị card gần như full-screen.
-- Tap để flip, swipe để chấm: `← Again`, `↓ Hard`, `→ Good`, `↑ Easy`.
-- Chọn bộ câu hỏi được đặt trong tab `Settings`.
+- Câu hỏi hỗ trợ song ngữ: **Tiếng Việt** và **English**.
+- Trong tab Learning:
+  - Tap để **flip card** (lật từ câu hỏi sang đáp án).
+  - Swipe để chấm trí nhớ: `← Again`, `↓ Hard`, `→ Good`, `↑ Easy`.
+- Câu hỏi nằm trong các file JSON để dễ bổ sung.
+- Học theo due-card với spaced repetition kiểu SM-2 đơn giản.
+- Lưu tiến độ vào IndexedDB.
+- Có chế độ mix câu hỏi và chọn chủ đề theo danh sách file JSON.
+- Kiến trúc dùng `abstract class QuestionSource` để mở rộng nguồn dữ liệu.
 
-## Dữ liệu câu hỏi
-
-- Mỗi file JSON có ~100 câu song ngữ `vi/en`:
-  - `src/data/js.json`
-  - `src/data/typescript.json`
-  - `src/data/angular.json`
-  - `src/data/problem-solving.json`
-
-Schema:
+## Cấu trúc dữ liệu JSON
 
 ```json
-{
-  "id": "...",
-  "question": { "vi": "...", "en": "..." },
-  "answer": { "vi": "...", "en": "..." },
-  "level": "beginner|intermediate|advanced",
-  "tags": ["..."]
-}
+[
+  {
+    "id": "unique-id",
+    "question": { "vi": "...", "en": "..." },
+    "answer": { "vi": "...", "en": "..." },
+    "level": "beginner | intermediate | advanced",
+    "tags": ["tag1", "tag2"]
+  }
+]
 ```
 
 ## Chạy local
@@ -37,9 +35,12 @@ Schema:
 ```bash
 npm install
 npm run dev
+```
+
+## Build nhanh để deploy Vercel
+
+```bash
 npm run build
 ```
 
-## Deploy Vercel
-
-Dự án đã có `vercel.json`, import repo là deploy được ngay.
+Project đã có sẵn `vercel.json`, chỉ cần import repo vào Vercel là deploy.

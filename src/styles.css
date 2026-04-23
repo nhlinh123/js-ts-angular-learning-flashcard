@@ -1,14 +1,7 @@
 :root {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #111111;
-  background: #f5f5f7;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #f2f2f7;
-    background: #0f1115;
-  }
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #e2e8f0;
+  background: #0f172a;
 }
 
 * {
@@ -17,134 +10,21 @@
 
 body {
   margin: 0;
-  background: #f5f5f7;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #0f1115;
-  }
+  min-height: 100vh;
+  background: #0f172a;
 }
 
 .app {
-  min-height: 100vh;
-  padding: 16px 16px 94px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 16px 90px;
 }
 
-.glass-shell {
-  background: rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-}
-
-.header-shell {
-  border-radius: 16px;
-  padding: 14px 16px;
-  margin-bottom: 12px;
-}
-
-.header-shell h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.header-shell p {
-  margin: 4px 0 0;
-}
-
-.content-shell {
-  background: #ffffff;
-  border-radius: 18px;
+.panel {
+  background: #1e293b;
+  border-radius: 14px;
   padding: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-}
-
-@media (prefers-color-scheme: dark) {
-  .content-shell {
-    background: #1c1c1e;
-  }
-}
-
-.learning-screen {
-  height: calc(100vh - 168px);
-}
-
-.full-card {
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-  background: #ffffff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 14px;
-  touch-action: none;
-  transition: transform 0.2s ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  .full-card {
-    background: #1c1c1e;
-  }
-}
-
-.full-card.flipped {
-  outline: 2px solid #0a84ff;
-}
-
-.meta,
-.hint,
-small {
-  color: #54545a;
-}
-
-@media (prefers-color-scheme: dark) {
-  .meta,
-  .hint,
-  small {
-    color: #b0b0b8;
-  }
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 10px;
-}
-
-.stats-grid article {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-}
-
-@media (prefers-color-scheme: dark) {
-  .stats-grid article {
-    background: #2c2c2e;
-  }
-}
-
-.stats-grid h3 {
-  margin: 0;
-  font-size: 14px;
-}
-
-.stats-grid p {
-  margin: 8px 0 0;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.settings-row,
-.toggle-row {
-  display: grid;
-  gap: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .bank-list {
@@ -158,40 +38,88 @@ small {
   align-items: flex-start;
 }
 
+.bank-item small,
+.hint {
+  display: block;
+  color: #94a3b8;
+}
+
+.flashcard {
+  background: linear-gradient(140deg, #1d4ed8, #7c3aed);
+  border-radius: 16px;
+  padding: 18px;
+  min-height: 220px;
+  transition: transform 0.2s ease;
+  touch-action: none;
+  cursor: pointer;
+}
+
+.flashcard.flipped {
+  background: linear-gradient(140deg, #0f766e, #16a34a);
+}
+
+.meta {
+  color: #dbeafe;
+  margin: 0 0 8px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.stats-grid article {
+  background: #0b1220;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.stats-grid h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.stats-grid p {
+  margin: 8px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.settings-row {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
 input,
 select,
 button {
-  border-radius: 10px;
-  border: 1px solid rgba(120, 120, 128, 0.25);
-  padding: 10px;
-  font: inherit;
-}
-
-button {
-  background: transparent;
-  color: inherit;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 
 .bottom-nav {
   position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  padding: 8px;
-  border-radius: 18px;
+  padding: 10px;
+  background: rgba(15, 23, 42, 0.96);
+  border-top: 1px solid #334155;
+}
+
+.bottom-nav button {
+  background: #334155;
+  color: #e2e8f0;
 }
 
 .bottom-nav button.active {
-  background: #0a84ff;
+  background: #3b82f6;
   color: #ffffff;
-  border-color: #0a84ff;
-}
-
-.empty-state {
-  height: 100%;
-  display: grid;
-  place-items: center;
 }

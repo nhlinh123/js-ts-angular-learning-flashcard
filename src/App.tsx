@@ -20,7 +20,7 @@ function shuffle<T>(items: T[]): T[] {
 }
 
 function getDifficultyBySwipe(deltaX: number, deltaY: number): Difficulty | null {
-  const threshold = 72;
+  const threshold = 80;
   if (Math.abs(deltaX) < threshold && Math.abs(deltaY) < threshold) return null;
   if (Math.abs(deltaX) >= Math.abs(deltaY)) return deltaX > 0 ? 'good' : 'again';
   return deltaY < 0 ? 'easy' : 'hard';
@@ -51,23 +51,16 @@ export default function App() {
         mixedMode?: boolean;
         language?: Language;
         dailyTarget?: number;
-        selectedBanks?: string[];
       };
       if (typeof parsed.mixedMode === 'boolean') setMixedMode(parsed.mixedMode);
       if (parsed.language === 'vi' || parsed.language === 'en') setLanguage(parsed.language);
       if (typeof parsed.dailyTarget === 'number') setDailyTarget(parsed.dailyTarget);
-      if (Array.isArray(parsed.selectedBanks) && parsed.selectedBanks.length) {
-        setSelectedBanks(parsed.selectedBanks);
-      }
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem(
-      SETTINGS_KEY,
-      JSON.stringify({ mixedMode, language, dailyTarget, selectedBanks })
-    );
-  }, [mixedMode, language, dailyTarget, selectedBanks]);
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify({ mixedMode, language, dailyTarget }));
+  }, [mixedMode, language, dailyTarget]);
 
   useEffect(() => {
     void loadAllProgress().then(setProgress);
@@ -96,19 +89,24 @@ export default function App() {
     [cards, progress]
   );
 
+  const current = dueCards[currentIndex];
   const dueLimited = dueCards.slice(0, dailyTarget);
-  const current = dueLimited[currentIndex];
 
   const dashboardStats = useMemo(() => {
-    const all = Object.values(progress);
-    return {
-      total: all.reduce((acc, item) => acc + item.totalReviews, 0),
-      again: all.reduce((acc, item) => acc + item.againCount, 0),
-      hard: all.reduce((acc, item) => acc + item.hardCount, 0),
-      good: all.reduce((acc, item) => acc + item.goodCount, 0),
-      easy: all.reduce((acc, item) => acc + item.easyCount, 0)
-    };
+    const total = Object.values(progress).reduce((acc, item) => acc + item.totalReviews, 0);
+    const again = Object.values(progress).reduce((acc, item) => acc + item.againCount, 0);
+    const hard = Object.values(progress).reduce((acc, item) => acc + item.hardCount, 0);
+    const good = Object.values(progress).reduce((acc, item) => acc + item.goodCount, 0);
+    const easy = Object.values(progress).reduce((acc, item) => acc + item.easyCount, 0);
+
+    return { total, again, hard, good, easy };
   }, [progress]);
+
+  const onToggleBank = (id: string) => {
+    setSelectedBanks((prev) =>
+      prev.includes(id) ? prev.filter((bankId) => bankId !== id) : [...prev, id]
+    );
+  };
 
   const handleReview = async (difficulty: Difficulty) => {
     if (!current) return;
@@ -151,23 +149,16 @@ export default function App() {
 
   return (
     <main className="app">
-      <header className="glass-shell header-shell">
-        <h1>Interview Flashcards</h1>
-        <p>
-          {tab === 'learning' ? 'Tap để flip, swipe để chấm trí nhớ' : 'Active Recall + Spaced Repetition'}
-        </p>
-      </header>
-
       {tab === 'dashboard' && (
-        <section className="content-shell">
-          <h2>Dashboard</h2>
+        <section className="panel">
+          <h2>Dashboard học tập</h2>
           <div className="stats-grid">
             <article>
-              <h3>Total Reviews</h3>
+              <h3>Tổng lượt review</h3>
               <p>{dashboardStats.total}</p>
             </article>
             <article>
-              <h3>Due Today</h3>
+              <h3>Due hôm nay</h3>
               <p>{dueCards.length}</p>
             </article>
             <article>
@@ -183,44 +174,75 @@ export default function App() {
               </p>
             </article>
           </div>
+          <p className="hint">Daily target: {dailyTarget} thẻ · Language: {language.toUpperCase()}</p>
         </section>
       )}
 
       {tab === 'learning' && (
-        <section className="learning-screen">
-          {!current ? (
-            <div className="content-shell empty-state">
-              <p>Không có thẻ đến hạn. Hãy chỉnh bộ câu hỏi trong Settings.</p>
+        <>
+          <section className="panel">
+            <h2>Chọn bộ câu hỏi (JSON)</h2>
+            <div className="bank-list">
+              {banks.map((bank) => (
+                <label key={bank.id} className="bank-item">
+                  <input
+                    type="checkbox"
+                    checked={selectedBanks.includes(bank.id)}
+                    onChange={() => onToggleBank(bank.id)}
+                  />
+                  <div>
+                    <strong>{bank.title}</strong>
+                    <small>
+                      {bank.description} · file: <code>{bank.fileName}</code>
+                    </small>
+                  </div>
+                </label>
+              ))}
             </div>
-          ) : (
-            <article
-              className={`full-card ${flipped ? 'flipped' : ''}`}
-              onClick={() => setFlipped((v) => !v)}
-              onPointerDown={onPointerDown}
-              onPointerMove={onPointerMove}
-              onPointerUp={() => void onPointerUp()}
-              style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
-            >
-              <p className="meta">
-                {current.bankTitle} · {current.card.level} · {currentIndex + 1}/{dueLimited.length}
-              </p>
-              {!flipped ? (
-                <h2>{current.card.question[language]}</h2>
-              ) : (
-                <h2>{current.card.answer[language]}</h2>
-              )}
-              <p className="hint">← Again · ↓ Hard · → Good · ↑ Easy</p>
-            </article>
-          )}
-        </section>
+          </section>
+
+          <section className="panel">
+            <h2>
+              Due: {dueLimited.length} / Tổng selected: {cards.length}
+            </h2>
+            <p className="hint">Swipe: ← Again · ↓ Hard · → Good · ↑ Easy</p>
+
+            {!current ? (
+              <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
+            ) : (
+              <article
+                className={`flashcard ${flipped ? 'flipped' : ''}`}
+                onClick={() => setFlipped((v) => !v)}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={() => void onPointerUp()}
+                style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
+              >
+                <p className="meta">
+                  {current.bankTitle} · {current.card.level}
+                </p>
+                {!flipped ? (
+                  <>
+                    <h3>{current.card.question[language]}</h3>
+                    <p className="hint">Tap để flip card.</p>
+                  </>
+                ) : (
+                  <>
+                    <h3>{current.card.answer[language]}</h3>
+                    <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
+                  </>
+                )}
+              </article>
+            )}
+          </section>
+        </>
       )}
 
       {tab === 'settings' && (
-        <section className="content-shell">
+        <section className="panel">
           <h2>Settings</h2>
-
           <div className="settings-row">
-            <label htmlFor="language">Language</label>
+            <label htmlFor="language">Ngôn ngữ câu hỏi</label>
             <select
               id="language"
               value={language}
@@ -232,52 +254,29 @@ export default function App() {
           </div>
 
           <div className="settings-row">
-            <label htmlFor="dailyTarget">Daily target</label>
+            <label htmlFor="dailyTarget">Số thẻ tối đa / ngày</label>
             <input
               id="dailyTarget"
               type="number"
               min={5}
-              max={300}
+              max={200}
               value={dailyTarget}
               onChange={(e) => setDailyTarget(Number(e.target.value || 20))}
             />
           </div>
 
-          <label className="toggle-row">
+          <label className="mix-toggle">
             <input
               type="checkbox"
               checked={mixedMode}
               onChange={(e) => setMixedMode(e.target.checked)}
             />
-            Mix questions
+            Bật chế độ trộn câu hỏi (mix mode)
           </label>
-
-          <h3>Question banks</h3>
-          <div className="bank-list">
-            {banks.map((bank) => (
-              <label key={bank.id} className="bank-item">
-                <input
-                  type="checkbox"
-                  checked={selectedBanks.includes(bank.id)}
-                  onChange={() =>
-                    setSelectedBanks((prev) =>
-                      prev.includes(bank.id)
-                        ? prev.filter((bankId) => bankId !== bank.id)
-                        : [...prev, bank.id]
-                    )
-                  }
-                />
-                <div>
-                  <strong>{bank.title}</strong>
-                  <small>{bank.fileName}</small>
-                </div>
-              </label>
-            ))}
-          </div>
         </section>
       )}
 
-      <nav className="glass-shell bottom-nav">
+      <nav className="bottom-nav">
         <button className={tab === 'dashboard' ? 'active' : ''} onClick={() => setTab('dashboard')}>
           Dashboard
         </button>
