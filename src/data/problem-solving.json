@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ps-debug-01",
+    "question": {
+      "vi": "Khi gặp bug production khó tái hiện, bạn xử lý theo quy trình nào?",
+      "en": "How do you handle a hard-to-reproduce production bug?"
+    },
+    "answer": {
+      "vi": "Thu thập log/telemetry, tạo giả thuyết, tái tạo với dữ liệu gần thực tế, thu hẹp phạm vi, fix và thêm regression test.",
+      "en": "Collect logs/telemetry, form hypotheses, reproduce with realistic data, narrow scope, implement fix, and add regression tests."
+    },
+    "level": "intermediate",
+    "tags": ["problem-solving", "debugging"]
+  },
+  {
+    "id": "ps-tradeoff-01",
+    "question": {
+      "vi": "Một giải pháp nhanh nhưng technical debt cao; giải pháp kia chậm nhưng bền vững. Cân bằng thế nào?",
+      "en": "One option is fast but creates high technical debt; another is slower but sustainable. How do you balance it?"
+    },
+    "answer": {
+      "vi": "Đánh giá impact business, tuổi thọ feature, rủi ro vận hành; chọn phương án có guardrails và kế hoạch refactor rõ ràng.",
+      "en": "Evaluate business impact, feature lifespan, and operational risk; choose with guardrails and a clear refactor plan."
+    },
+    "level": "advanced",
+    "tags": ["problem-solving", "architecture"]
+  },
+  {
+    "id": "ps-communication-01",
+    "question": {
+      "vi": "Cách trình bày một bài toán kỹ thuật phức tạp với interviewer không chuyên sâu lĩnh vực?",
+      "en": "How do you present a complex technical problem to an interviewer outside your specialty?"
+    },
+    "answer": {
+      "vi": "Bắt đầu từ bối cảnh + mục tiêu, nêu ràng buộc, so sánh phương án, chốt lý do chọn và cách đo kết quả.",
+      "en": "Start with context and goal, explain constraints, compare options, then justify your decision and success metrics."
+    },
+    "level": "beginner",
+    "tags": ["problem-solving", "communication"]
+  }
+]

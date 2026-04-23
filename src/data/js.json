@@ -1,0 +1,41 @@
+[
+  {
+    "id": "js-closure-01",
+    "question": {
+      "vi": "Closure trong JavaScript là gì? Cho ví dụ thực tế.",
+      "en": "What is a closure in JavaScript? Give a practical example."
+    },
+    "answer": {
+      "vi": "Closure là khi function ghi nhớ lexical scope nơi nó được tạo. Ví dụ factory function trả về hàm tăng biến private count.",
+      "en": "A closure is when a function keeps access to its lexical scope after the outer function returns. Example: a factory returning an increment function with a private count."
+    },
+    "level": "beginner",
+    "tags": ["javascript", "closure", "scope"]
+  },
+  {
+    "id": "js-event-loop-01",
+    "question": {
+      "vi": "Event loop hoạt động thế nào giữa call stack, microtask queue và macrotask queue?",
+      "en": "How does the event loop work with call stack, microtask queue, and macrotask queue?"
+    },
+    "answer": {
+      "vi": "Engine chạy call stack trước. Sau mỗi tick, microtask (Promise callbacks) được ưu tiên xử lý trước khi lấy macrotask tiếp theo (setTimeout, I/O).",
+      "en": "The engine runs the call stack first. After each tick, microtasks (Promise callbacks) are drained before the next macrotask (setTimeout, I/O)."
+    },
+    "level": "intermediate",
+    "tags": ["javascript", "event-loop", "async"]
+  },
+  {
+    "id": "js-this-01",
+    "question": {
+      "vi": "So sánh this trong regular function, arrow function, và method binding.",
+      "en": "Compare this in regular functions, arrow functions, and bound methods."
+    },
+    "answer": {
+      "vi": "Regular function phụ thuộc call-site. Arrow function lấy lexical this từ scope cha. bind/call/apply có thể ép this cho regular function.",
+      "en": "Regular function this depends on call-site. Arrow functions capture lexical this. bind/call/apply can set this for regular functions."
+    },
+    "level": "advanced",
+    "tags": ["javascript", "this", "oop"]
+  }
+]

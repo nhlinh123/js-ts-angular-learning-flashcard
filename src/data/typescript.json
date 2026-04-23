@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ts-interface-type-01",
+    "question": {
+      "vi": "Khác nhau chính giữa interface và type alias trong TypeScript?",
+      "en": "What are the key differences between interface and type alias in TypeScript?"
+    },
+    "answer": {
+      "vi": "Interface hỗ trợ declaration merging và thường dùng cho object contract. Type alias linh hoạt hơn cho union, mapped, conditional types.",
+      "en": "Interface supports declaration merging and is commonly used for object contracts. Type aliases are more flexible for unions, mapped and conditional types."
+    },
+    "level": "beginner",
+    "tags": ["typescript", "types"]
+  },
+  {
+    "id": "ts-generics-01",
+    "question": {
+      "vi": "Giải thích generic constraint với extends và lợi ích khi design API.",
+      "en": "Explain generic constraints with extends and why they help API design."
+    },
+    "answer": {
+      "vi": "Constraint giới hạn kiểu T phải thỏa điều kiện (ví dụ T extends {id:string}) để compiler đảm bảo property tồn tại, giữ type-safety.",
+      "en": "Constraints restrict T to satisfy a shape (e.g., T extends {id:string}), so the compiler guarantees required properties and preserves type safety."
+    },
+    "level": "intermediate",
+    "tags": ["typescript", "generics"]
+  },
+  {
+    "id": "ts-advanced-01",
+    "question": {
+      "vi": "Conditional type phân phối trên union khi nào?",
+      "en": "When do conditional types distribute across unions?"
+    },
+    "answer": {
+      "vi": "Khi type parameter generic đứng trần ở vế trái extends (T extends U ? X : Y), TS sẽ áp điều kiện cho từng phần tử của union.",
+      "en": "When a naked generic parameter is on the left side of extends (T extends U ? X : Y), TypeScript applies the conditional per union member."
+    },
+    "level": "advanced",
+    "tags": ["typescript", "conditional-types"]
+  }
+]
