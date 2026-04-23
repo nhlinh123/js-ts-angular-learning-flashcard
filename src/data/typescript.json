@@ -6,8 +6,8 @@
       "en": "Explain the core concept of Type inference và control-flow narrowing."
     },
     "answer": {
-      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Type inference và control-flow narrowing là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Type inference và control-flow narrowing. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Type inference và control-flow narrowing is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -23,8 +23,8 @@
       "en": "Describe the internal mechanism of Type inference và control-flow narrowing and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Type inference và control-flow narrowing có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Type inference và control-flow narrowing can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -40,8 +40,8 @@
       "en": "What common production pitfalls/edge cases exist in Type inference và control-flow narrowing, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Type inference và control-flow narrowing là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Type inference và control-flow narrowing include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -57,8 +57,8 @@
       "en": "In real system design, how should Type inference và control-flow narrowing be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type inference và control-flow narrowing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type inference và control-flow narrowing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Type inference và control-flow narrowing ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Type inference và control-flow narrowing in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -74,8 +74,8 @@
       "en": "Explain the core concept of Generics, constraints, defaults."
     },
     "answer": {
-      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Generics, constraints, defaults là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Generics, constraints, defaults. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Generics, constraints, defaults is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -91,8 +91,8 @@
       "en": "Describe the internal mechanism of Generics, constraints, defaults and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Generics, constraints, defaults có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Generics, constraints, defaults can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -108,8 +108,8 @@
       "en": "What common production pitfalls/edge cases exist in Generics, constraints, defaults, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Generics, constraints, defaults là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Generics, constraints, defaults include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -125,8 +125,8 @@
       "en": "In real system design, how should Generics, constraints, defaults be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Generics, constraints, defaults. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Generics, constraints, defaults. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Generics, constraints, defaults ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Generics, constraints, defaults in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -142,8 +142,8 @@
       "en": "Explain the core concept of Union/discriminated union/exhaustiveness."
     },
     "answer": {
-      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Union/discriminated union/exhaustiveness là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Union/discriminated union/exhaustiveness. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Union/discriminated union/exhaustiveness is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -159,8 +159,8 @@
       "en": "Describe the internal mechanism of Union/discriminated union/exhaustiveness and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Union/discriminated union/exhaustiveness có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Union/discriminated union/exhaustiveness can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -176,8 +176,8 @@
       "en": "What common production pitfalls/edge cases exist in Union/discriminated union/exhaustiveness, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Union/discriminated union/exhaustiveness là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Union/discriminated union/exhaustiveness include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -193,8 +193,8 @@
       "en": "In real system design, how should Union/discriminated union/exhaustiveness be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Union/discriminated union/exhaustiveness. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Union/discriminated union/exhaustiveness. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Union/discriminated union/exhaustiveness ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Union/discriminated union/exhaustiveness in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -210,8 +210,8 @@
       "en": "Explain the core concept of Utility types (Pick/Omit/Record/Extract)."
     },
     "answer": {
-      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Utility types (Pick/Omit/Record/Extract) là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Utility types (Pick/Omit/Record/Extract). Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Utility types (Pick/Omit/Record/Extract) is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -227,8 +227,8 @@
       "en": "Describe the internal mechanism of Utility types (Pick/Omit/Record/Extract) and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Utility types (Pick/Omit/Record/Extract) có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Utility types (Pick/Omit/Record/Extract) can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -244,8 +244,8 @@
       "en": "What common production pitfalls/edge cases exist in Utility types (Pick/Omit/Record/Extract), and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Utility types (Pick/Omit/Record/Extract) là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Utility types (Pick/Omit/Record/Extract) include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -261,8 +261,8 @@
       "en": "In real system design, how should Utility types (Pick/Omit/Record/Extract) be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Utility types (Pick/Omit/Record/Extract). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Utility types (Pick/Omit/Record/Extract). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Utility types (Pick/Omit/Record/Extract) ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Utility types (Pick/Omit/Record/Extract) in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -278,8 +278,8 @@
       "en": "Explain the core concept of Conditional types, infer, distributive."
     },
     "answer": {
-      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Conditional types, infer, distributive là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Conditional types, infer, distributive. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Conditional types, infer, distributive is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -295,8 +295,8 @@
       "en": "Describe the internal mechanism of Conditional types, infer, distributive and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Conditional types, infer, distributive có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Conditional types, infer, distributive can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -312,8 +312,8 @@
       "en": "What common production pitfalls/edge cases exist in Conditional types, infer, distributive, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Conditional types, infer, distributive là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Conditional types, infer, distributive include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -329,8 +329,8 @@
       "en": "In real system design, how should Conditional types, infer, distributive be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Conditional types, infer, distributive. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Conditional types, infer, distributive. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Conditional types, infer, distributive ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Conditional types, infer, distributive in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -346,8 +346,8 @@
       "en": "Explain the core concept of Mapped types và template literal types."
     },
     "answer": {
-      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Mapped types và template literal types là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Mapped types và template literal types. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Mapped types và template literal types is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -363,8 +363,8 @@
       "en": "Describe the internal mechanism of Mapped types và template literal types and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Mapped types và template literal types có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Mapped types và template literal types can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -380,8 +380,8 @@
       "en": "What common production pitfalls/edge cases exist in Mapped types và template literal types, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Mapped types và template literal types là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Mapped types và template literal types include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -397,8 +397,8 @@
       "en": "In real system design, how should Mapped types và template literal types be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Mapped types và template literal types. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Mapped types và template literal types. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Mapped types và template literal types ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Mapped types và template literal types in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -414,8 +414,8 @@
       "en": "Explain the core concept of strictNullChecks, unknown, never."
     },
     "answer": {
-      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "strictNullChecks, unknown, never là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của strictNullChecks, unknown, never. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "strictNullChecks, unknown, never is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -431,8 +431,8 @@
       "en": "Describe the internal mechanism of strictNullChecks, unknown, never and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của strictNullChecks, unknown, never có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of strictNullChecks, unknown, never can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -448,8 +448,8 @@
       "en": "What common production pitfalls/edge cases exist in strictNullChecks, unknown, never, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với strictNullChecks, unknown, never là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in strictNullChecks, unknown, never include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -465,8 +465,8 @@
       "en": "In real system design, how should strictNullChecks, unknown, never be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: strictNullChecks, unknown, never. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: strictNullChecks, unknown, never. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng strictNullChecks, unknown, never ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply strictNullChecks, unknown, never in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -482,8 +482,8 @@
       "en": "Explain the core concept of as, non-null assertion, assertion function."
     },
     "answer": {
-      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "as, non-null assertion, assertion function là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của as, non-null assertion, assertion function. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "as, non-null assertion, assertion function is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -499,8 +499,8 @@
       "en": "Describe the internal mechanism of as, non-null assertion, assertion function and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của as, non-null assertion, assertion function có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of as, non-null assertion, assertion function can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -516,8 +516,8 @@
       "en": "What common production pitfalls/edge cases exist in as, non-null assertion, assertion function, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với as, non-null assertion, assertion function là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in as, non-null assertion, assertion function include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -533,8 +533,8 @@
       "en": "In real system design, how should as, non-null assertion, assertion function be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: as, non-null assertion, assertion function. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: as, non-null assertion, assertion function. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng as, non-null assertion, assertion function ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply as, non-null assertion, assertion function in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -550,8 +550,8 @@
       "en": "Explain the core concept of Custom type guards và predicates."
     },
     "answer": {
-      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Custom type guards và predicates là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Custom type guards và predicates. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Custom type guards và predicates is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -567,8 +567,8 @@
       "en": "Describe the internal mechanism of Custom type guards và predicates and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Custom type guards và predicates có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Custom type guards và predicates can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -584,8 +584,8 @@
       "en": "What common production pitfalls/edge cases exist in Custom type guards và predicates, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Custom type guards và predicates là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Custom type guards và predicates include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -601,8 +601,8 @@
       "en": "In real system design, how should Custom type guards và predicates be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Custom type guards và predicates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Custom type guards và predicates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Custom type guards và predicates ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Custom type guards và predicates in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -618,8 +618,8 @@
       "en": "Explain the core concept of Function overload, signatures, DTO typing."
     },
     "answer": {
-      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Function overload, signatures, DTO typing là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Function overload, signatures, DTO typing. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Function overload, signatures, DTO typing is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -635,8 +635,8 @@
       "en": "Describe the internal mechanism of Function overload, signatures, DTO typing and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Function overload, signatures, DTO typing có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Function overload, signatures, DTO typing can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -652,8 +652,8 @@
       "en": "What common production pitfalls/edge cases exist in Function overload, signatures, DTO typing, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Function overload, signatures, DTO typing là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Function overload, signatures, DTO typing include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -669,8 +669,8 @@
       "en": "In real system design, how should Function overload, signatures, DTO typing be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Function overload, signatures, DTO typing. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Function overload, signatures, DTO typing. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Function overload, signatures, DTO typing ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Function overload, signatures, DTO typing in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -686,8 +686,8 @@
       "en": "Explain the core concept of Strict flags và compiler options."
     },
     "answer": {
-      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Strict flags và compiler options là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Strict flags và compiler options. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Strict flags và compiler options is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -703,8 +703,8 @@
       "en": "Describe the internal mechanism of Strict flags và compiler options and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Strict flags và compiler options có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Strict flags và compiler options can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -720,8 +720,8 @@
       "en": "What common production pitfalls/edge cases exist in Strict flags và compiler options, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Strict flags và compiler options là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Strict flags và compiler options include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -737,8 +737,8 @@
       "en": "In real system design, how should Strict flags và compiler options be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Strict flags và compiler options. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Strict flags và compiler options. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Strict flags và compiler options ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Strict flags và compiler options in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -754,8 +754,8 @@
       "en": "Explain the core concept of ESM/CJS interop, import type."
     },
     "answer": {
-      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "ESM/CJS interop, import type là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của ESM/CJS interop, import type. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "ESM/CJS interop, import type is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -771,8 +771,8 @@
       "en": "Describe the internal mechanism of ESM/CJS interop, import type and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của ESM/CJS interop, import type có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of ESM/CJS interop, import type can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -788,8 +788,8 @@
       "en": "What common production pitfalls/edge cases exist in ESM/CJS interop, import type, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với ESM/CJS interop, import type là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in ESM/CJS interop, import type include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -805,8 +805,8 @@
       "en": "In real system design, how should ESM/CJS interop, import type be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: ESM/CJS interop, import type. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: ESM/CJS interop, import type. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng ESM/CJS interop, import type ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply ESM/CJS interop, import type in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -822,8 +822,8 @@
       "en": "Explain the core concept of .d.ts, module augmentation, declaration merge."
     },
     "answer": {
-      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": ".d.ts, module augmentation, declaration merge là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của .d.ts, module augmentation, declaration merge. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": ".d.ts, module augmentation, declaration merge is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -839,8 +839,8 @@
       "en": "Describe the internal mechanism of .d.ts, module augmentation, declaration merge and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của .d.ts, module augmentation, declaration merge có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of .d.ts, module augmentation, declaration merge can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -856,8 +856,8 @@
       "en": "What common production pitfalls/edge cases exist in .d.ts, module augmentation, declaration merge, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với .d.ts, module augmentation, declaration merge là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in .d.ts, module augmentation, declaration merge include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -873,8 +873,8 @@
       "en": "In real system design, how should .d.ts, module augmentation, declaration merge be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: .d.ts, module augmentation, declaration merge. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: .d.ts, module augmentation, declaration merge. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng .d.ts, module augmentation, declaration merge ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply .d.ts, module augmentation, declaration merge in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -890,8 +890,8 @@
       "en": "Explain the core concept of Schema validation (zod/io-ts)."
     },
     "answer": {
-      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Schema validation (zod/io-ts) là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Schema validation (zod/io-ts). Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Schema validation (zod/io-ts) is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -907,8 +907,8 @@
       "en": "Describe the internal mechanism of Schema validation (zod/io-ts) and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Schema validation (zod/io-ts) có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Schema validation (zod/io-ts) can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -924,8 +924,8 @@
       "en": "What common production pitfalls/edge cases exist in Schema validation (zod/io-ts), and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Schema validation (zod/io-ts) là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Schema validation (zod/io-ts) include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -941,8 +941,8 @@
       "en": "In real system design, how should Schema validation (zod/io-ts) be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Schema validation (zod/io-ts). Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Schema validation (zod/io-ts). A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Schema validation (zod/io-ts) ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Schema validation (zod/io-ts) in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -958,8 +958,8 @@
       "en": "Explain the core concept of Typing props/hooks/context/events."
     },
     "answer": {
-      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Typing props/hooks/context/events là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Typing props/hooks/context/events. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Typing props/hooks/context/events is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -975,8 +975,8 @@
       "en": "Describe the internal mechanism of Typing props/hooks/context/events and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Typing props/hooks/context/events có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Typing props/hooks/context/events can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -992,8 +992,8 @@
       "en": "What common production pitfalls/edge cases exist in Typing props/hooks/context/events, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Typing props/hooks/context/events là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Typing props/hooks/context/events include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1009,8 +1009,8 @@
       "en": "In real system design, how should Typing props/hooks/context/events be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typing props/hooks/context/events. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typing props/hooks/context/events. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Typing props/hooks/context/events ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Typing props/hooks/context/events in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1026,8 +1026,8 @@
       "en": "Explain the core concept of Finite state modeling cho UI."
     },
     "answer": {
-      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Finite state modeling cho UI là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Finite state modeling cho UI. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Finite state modeling cho UI is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1043,8 +1043,8 @@
       "en": "Describe the internal mechanism of Finite state modeling cho UI and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Finite state modeling cho UI có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Finite state modeling cho UI can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1060,8 +1060,8 @@
       "en": "What common production pitfalls/edge cases exist in Finite state modeling cho UI, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Finite state modeling cho UI là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Finite state modeling cho UI include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1077,8 +1077,8 @@
       "en": "In real system design, how should Finite state modeling cho UI be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Finite state modeling cho UI. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Finite state modeling cho UI. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Finite state modeling cho UI ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Finite state modeling cho UI in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1094,8 +1094,8 @@
       "en": "Explain the core concept of Typed tests, mocks, contract tests."
     },
     "answer": {
-      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Typed tests, mocks, contract tests là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Typed tests, mocks, contract tests. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Typed tests, mocks, contract tests is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1111,8 +1111,8 @@
       "en": "Describe the internal mechanism of Typed tests, mocks, contract tests and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Typed tests, mocks, contract tests có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Typed tests, mocks, contract tests can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1128,8 +1128,8 @@
       "en": "What common production pitfalls/edge cases exist in Typed tests, mocks, contract tests, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Typed tests, mocks, contract tests là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Typed tests, mocks, contract tests include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1145,8 +1145,8 @@
       "en": "In real system design, how should Typed tests, mocks, contract tests be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typed tests, mocks, contract tests. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed tests, mocks, contract tests. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Typed tests, mocks, contract tests ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Typed tests, mocks, contract tests in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1162,8 +1162,8 @@
       "en": "Explain the core concept of Project references, incremental build."
     },
     "answer": {
-      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Project references, incremental build là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Project references, incremental build. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Project references, incremental build is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1179,8 +1179,8 @@
       "en": "Describe the internal mechanism of Project references, incremental build and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Project references, incremental build có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Project references, incremental build can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1196,8 +1196,8 @@
       "en": "What common production pitfalls/edge cases exist in Project references, incremental build, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Project references, incremental build là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Project references, incremental build include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1213,8 +1213,8 @@
       "en": "In real system design, how should Project references, incremental build be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Project references, incremental build. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Project references, incremental build. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Project references, incremental build ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Project references, incremental build in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1230,8 +1230,8 @@
       "en": "Explain the core concept of Type-level performance và compile time."
     },
     "answer": {
-      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Type-level performance và compile time là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Type-level performance và compile time. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Type-level performance và compile time is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1247,8 +1247,8 @@
       "en": "Describe the internal mechanism of Type-level performance và compile time and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Type-level performance và compile time có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Type-level performance và compile time can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1264,8 +1264,8 @@
       "en": "What common production pitfalls/edge cases exist in Type-level performance và compile time, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Type-level performance và compile time là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Type-level performance và compile time include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1281,8 +1281,8 @@
       "en": "In real system design, how should Type-level performance và compile time be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type-level performance và compile time. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-level performance và compile time. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Type-level performance và compile time ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Type-level performance và compile time in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1298,8 +1298,8 @@
       "en": "Explain the core concept of JS -> TS migration chiến lược."
     },
     "answer": {
-      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "JS -> TS migration chiến lược là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của JS -> TS migration chiến lược. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "JS -> TS migration chiến lược is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1315,8 +1315,8 @@
       "en": "Describe the internal mechanism of JS -> TS migration chiến lược and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của JS -> TS migration chiến lược có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of JS -> TS migration chiến lược can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1332,8 +1332,8 @@
       "en": "What common production pitfalls/edge cases exist in JS -> TS migration chiến lược, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với JS -> TS migration chiến lược là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in JS -> TS migration chiến lược include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1349,8 +1349,8 @@
       "en": "In real system design, how should JS -> TS migration chiến lược be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: JS -> TS migration chiến lược. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: JS -> TS migration chiến lược. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng JS -> TS migration chiến lược ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply JS -> TS migration chiến lược in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1366,8 +1366,8 @@
       "en": "Explain the core concept of Branded types, nominal tricks."
     },
     "answer": {
-      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Branded types, nominal tricks là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Branded types, nominal tricks. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Branded types, nominal tricks is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1383,8 +1383,8 @@
       "en": "Describe the internal mechanism of Branded types, nominal tricks and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Branded types, nominal tricks có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Branded types, nominal tricks can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1400,8 +1400,8 @@
       "en": "What common production pitfalls/edge cases exist in Branded types, nominal tricks, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Branded types, nominal tricks là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Branded types, nominal tricks include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1417,8 +1417,8 @@
       "en": "In real system design, how should Branded types, nominal tricks be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Branded types, nominal tricks. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Branded types, nominal tricks. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Branded types, nominal tricks ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Branded types, nominal tricks in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1434,8 +1434,8 @@
       "en": "Explain the core concept of Lint rules và quality gates."
     },
     "answer": {
-      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lint rules và quality gates là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Lint rules và quality gates. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Lint rules và quality gates is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1451,8 +1451,8 @@
       "en": "Describe the internal mechanism of Lint rules và quality gates and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Lint rules và quality gates có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Lint rules và quality gates can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1468,8 +1468,8 @@
       "en": "What common production pitfalls/edge cases exist in Lint rules và quality gates, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Lint rules và quality gates là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Lint rules và quality gates include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1485,8 +1485,8 @@
       "en": "In real system design, how should Lint rules và quality gates be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Lint rules và quality gates. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Lint rules và quality gates. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Lint rules và quality gates ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Lint rules và quality gates in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1502,8 +1502,8 @@
       "en": "Explain the core concept of Type-safe permission/sanitization."
     },
     "answer": {
-      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Type-safe permission/sanitization là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Type-safe permission/sanitization. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Type-safe permission/sanitization is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1519,8 +1519,8 @@
       "en": "Describe the internal mechanism of Type-safe permission/sanitization and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Type-safe permission/sanitization có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Type-safe permission/sanitization can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1536,8 +1536,8 @@
       "en": "What common production pitfalls/edge cases exist in Type-safe permission/sanitization, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Type-safe permission/sanitization là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Type-safe permission/sanitization include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1553,8 +1553,8 @@
       "en": "In real system design, how should Type-safe permission/sanitization be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Type-safe permission/sanitization. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Type-safe permission/sanitization. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Type-safe permission/sanitization ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Type-safe permission/sanitization in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1570,8 +1570,8 @@
       "en": "Explain the core concept of Typed i18n keys và route params."
     },
     "answer": {
-      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Typed i18n keys và route params là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Typed i18n keys và route params. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Typed i18n keys và route params is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1587,8 +1587,8 @@
       "en": "Describe the internal mechanism of Typed i18n keys và route params and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Typed i18n keys và route params có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Typed i18n keys và route params can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1604,8 +1604,8 @@
       "en": "What common production pitfalls/edge cases exist in Typed i18n keys và route params, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Typed i18n keys và route params là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Typed i18n keys và route params include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1621,8 +1621,8 @@
       "en": "In real system design, how should Typed i18n keys và route params be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Typed i18n keys và route params. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Typed i18n keys và route params. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Typed i18n keys và route params ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Typed i18n keys và route params in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [
@@ -1638,8 +1638,8 @@
       "en": "Explain the core concept of Public API types, compatibility."
     },
     "answer": {
-      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Public API types, compatibility là nguyên tắc giúp bạn giải quyết đúng vấn đề thay vì xử lý triệu chứng. Cốt lõi là hiểu định nghĩa, phạm vi áp dụng, và tiêu chí thành công của Public API types, compatibility. Khi nắm rõ phần này, bạn sẽ chọn được cách triển khai phù hợp, giảm bug và dễ mở rộng hệ thống.",
+      "en": "Public API types, compatibility is a core principle that helps solve the real problem instead of just treating symptoms. The key is understanding its definition, scope, and success criteria. Once this is clear, you can pick the right implementation strategy, reduce defects, and scale the system more safely."
     },
     "level": "beginner",
     "tags": [
@@ -1655,8 +1655,8 @@
       "en": "Describe the internal mechanism of Public API types, compatibility and key execution order."
     },
     "answer": {
-      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Cơ chế của Public API types, compatibility có thể hiểu theo 3 bước: (1) xác định input và ràng buộc, (2) xử lý theo quy tắc/thuật toán cốt lõi, (3) trả output và kiểm chứng bằng test hoặc metrics. Khi debug, hãy kiểm tra từng bước theo đúng thứ tự để tìm điểm sai nhanh hơn.",
+      "en": "The mechanism of Public API types, compatibility can be described in three steps: (1) define inputs and constraints, (2) execute the core rules/algorithm, and (3) produce outputs and validate with tests or metrics. During debugging, verify each step in order to isolate issues quickly."
     },
     "level": "intermediate",
     "tags": [
@@ -1672,8 +1672,8 @@
       "en": "What common production pitfalls/edge cases exist in Public API types, compatibility, and how do you avoid them?"
     },
     "answer": {
-      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Lỗi thường gặp với Public API types, compatibility là hiểu sai phạm vi, bỏ qua edge case, và thiếu tiêu chí kiểm chứng. Cách tránh: viết rõ giả định, thêm test cho case biên, theo dõi metric sau deploy, và review thiết kế trước khi mở rộng. Nếu có trade-off, ưu tiên giải pháp dễ quan sát và dễ rollback.",
+      "en": "Common pitfalls in Public API types, compatibility include misunderstanding scope, skipping edge cases, and lacking validation criteria. To avoid them, document assumptions, add boundary-case tests, track post-deploy metrics, and review design decisions before scaling. Prefer solutions that are observable and easy to roll back."
     },
     "level": "intermediate",
     "tags": [
@@ -1689,8 +1689,8 @@
       "en": "In real system design, how should Public API types, compatibility be applied for maintainability and testability?"
     },
     "answer": {
-      "vi": "Trọng tâm: Public API types, compatibility. Câu trả lời tốt nên có: (1) định nghĩa chính xác, (2) mô tả flow xử lý, (3) ví dụ code ngắn, (4) edge case, (5) guideline áp dụng production.",
-      "en": "Focus: Public API types, compatibility. A strong answer should include: (1) precise definition, (2) execution flow, (3) short code example, (4) edge cases, and (5) production guidelines."
+      "vi": "Để áp dụng Public API types, compatibility ở quy mô lớn, nên tách rõ trách nhiệm giữa các module, chuẩn hoá convention code, và tự động hoá kiểm thử. Thiết kế theo hướng dễ thay thế từng phần, tài liệu hoá quyết định kỹ thuật, và thêm observability (log/metric/trace) để vận hành ổn định lâu dài.",
+      "en": "To apply Public API types, compatibility in large systems, separate responsibilities across modules, standardize coding conventions, and automate testing. Design for replaceable components, document technical decisions, and add observability (logs/metrics/traces) for long-term operational stability."
     },
     "level": "advanced",
     "tags": [

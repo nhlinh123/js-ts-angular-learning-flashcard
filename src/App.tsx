@@ -12,6 +12,11 @@ import { createInitialProgress, isDue, updateProgress } from './services/spaced-
 
 type Tab = 'dashboard' | 'learning' | 'settings';
 
+interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed'; platform: string }>;
+}
+
 const source = new JsonQuestionSource();
 const SETTINGS_KEY = 'flashcard-app-settings';
 
@@ -33,12 +38,12 @@ export default function App() {
   const [cards, setCards] = useState<FlashcardWithBank[]>([]);
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [flipped, setFlipped] = useState(false);
   const [mixedMode, setMixedMode] = useState(true);
   const [language, setLanguage] = useState<Language>('vi');
   const [dailyTarget, setDailyTarget] = useState(20);
   const [startPoint, setStartPoint] = useState<{ x: number; y: number } | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
 
   useEffect(() => {
     const allBanks = source.listBanks();
@@ -67,6 +72,25 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const onBeforeInstallPrompt = (event: Event) => {
+      event.preventDefault();
+      setInstallPrompt(event as BeforeInstallPromptEvent);
+    };
+
+    const onAppInstalled = () => {
+      setInstallPrompt(null);
+    };
+
+    window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt);
+    window.addEventListener('appinstalled', onAppInstalled);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', onAppInstalled);
+    };
+  }, []);
+
+  useEffect(() => {
     if (selectedBanks.length === 0) {
       setCards([]);
       return;
@@ -75,7 +99,6 @@ export default function App() {
     void source.loadMultipleBanks(selectedBanks).then((loaded) => {
       setCards(mixedMode ? shuffle(loaded) : loaded);
       setCurrentIndex(0);
-      setFlipped(false);
     });
   }, [selectedBanks, mixedMode]);
 
@@ -116,7 +139,6 @@ export default function App() {
 
     await saveProgress(updated);
     setProgress((prev) => ({ ...prev, [key]: updated }));
-    setFlipped(false);
     setDragOffset({ x: 0, y: 0 });
     setCurrentIndex((prev) => (dueLimited.length <= 1 ? 0 : (prev + 1) % dueLimited.length));
   };
@@ -126,12 +148,12 @@ export default function App() {
   };
 
   const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
-    if (!startPoint || !flipped) return;
+    if (!startPoint) return;
     setDragOffset({ x: event.clientX - startPoint.x, y: event.clientY - startPoint.y });
   };
 
   const onPointerUp = async () => {
-    if (!startPoint || !flipped) {
+    if (!startPoint) {
       setStartPoint(null);
       return;
     }
@@ -147,8 +169,26 @@ export default function App() {
     await handleReview(difficulty);
   };
 
+  const handleInstallApp = async () => {
+    if (!installPrompt) return;
+
+    await installPrompt.prompt();
+    const { outcome } = await installPrompt.userChoice;
+
+    if (outcome === 'accepted') {
+      setInstallPrompt(null);
+    }
+  };
+
   return (
     <main className="app">
+      {installPrompt && (
+        <section className="panel install-panel">
+          <h2>Cài đặt app (PWA)</h2>
+          <button onClick={() => void handleInstallApp()}>Install app</button>
+        </section>
+      )}
+
       {tab === 'dashboard' && (
         <section className="panel">
           <h2>Dashboard học tập</h2>
@@ -192,8 +232,7 @@ export default function App() {
               <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
             ) : (
               <article
-                className={`flashcard flashcard-full ${flipped ? 'flipped' : ''}`}
-                onClick={() => setFlipped((v) => !v)}
+                className="flashcard flashcard-full"
                 onPointerDown={onPointerDown}
                 onPointerMove={onPointerMove}
                 onPointerUp={() => void onPointerUp()}
@@ -202,17 +241,9 @@ export default function App() {
                 <p className="meta">
                   {current.bankTitle} · {current.card.level}
                 </p>
-                {!flipped ? (
-                  <>
-                    <h3>{current.card.question[language]}</h3>
-                    <p className="hint">Tap để flip card.</p>
-                  </>
-                ) : (
-                  <>
-                    <h3>{current.card.answer[language]}</h3>
-                    <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
-                  </>
-                )}
+                <h3>{current.card.question[language]}</h3>
+                <p className="answer">{current.card.answer[language]}</p>
+                <p className="hint">Swipe để chấm mức ghi nhớ: ← Again · ↓ Hard · → Good · ↑ Easy.</p>
               </article>
             )}
           </div>
