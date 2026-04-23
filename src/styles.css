@@ -25,7 +25,7 @@ body {
 }
 
 .app {
-  max-width: 980px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 16px 16px 100px;
 }
@@ -168,8 +168,9 @@ button {
 
 .bottom-nav {
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 520px);
   bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
