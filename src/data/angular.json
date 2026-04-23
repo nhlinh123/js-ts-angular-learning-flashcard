@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ng-change-detection-01",
+    "question": {
+      "vi": "Angular change detection chạy như thế nào và OnPush tối ưu gì?",
+      "en": "How does Angular change detection work and what does OnPush optimize?"
+    },
+    "answer": {
+      "vi": "Mặc định Angular check toàn cây component sau async events. OnPush chỉ check khi input reference đổi, event nội bộ, hoặc manual markForCheck.",
+      "en": "By default Angular checks the whole component tree after async events. OnPush checks when input reference changes, internal events occur, or markForCheck is called."
+    },
+    "level": "intermediate",
+    "tags": ["angular", "performance", "change-detection"]
+  },
+  {
+    "id": "ng-di-01",
+    "question": {
+      "vi": "Dependency injection trong Angular dựa trên provider scope nào?",
+      "en": "What provider scopes does Angular dependency injection rely on?"
+    },
+    "answer": {
+      "vi": "Có root injector và injector theo module/component. Scope quyết định vòng đời instance và tính singleton.",
+      "en": "There is a root injector plus module/component injectors. Scope defines instance lifecycle and singleton behavior."
+    },
+    "level": "beginner",
+    "tags": ["angular", "di"]
+  },
+  {
+    "id": "ng-rxjs-01",
+    "question": {
+      "vi": "Khi nào nên dùng switchMap thay vì mergeMap trong Angular HTTP flow?",
+      "en": "When should you use switchMap instead of mergeMap in Angular HTTP flows?"
+    },
+    "answer": {
+      "vi": "switchMap hủy stream cũ khi có giá trị mới (phù hợp search/typeahead). mergeMap cho phép nhiều request song song.",
+      "en": "switchMap cancels previous streams when a new value arrives (great for search/typeahead). mergeMap allows concurrent requests."
+    },
+    "level": "advanced",
+    "tags": ["angular", "rxjs"]
+  }
+]
