@@ -187,33 +187,35 @@ export default function App() {
             <p className="hint">Swipe: ← Again · ↓ Hard · → Good · ↑ Easy</p>
           </div>
 
-          {!current ? (
-            <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
-          ) : (
-            <article
-              className={`flashcard flashcard-full ${flipped ? 'flipped' : ''}`}
-              onClick={() => setFlipped((v) => !v)}
-              onPointerDown={onPointerDown}
-              onPointerMove={onPointerMove}
-              onPointerUp={() => void onPointerUp()}
-              style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
-            >
-              <p className="meta">
-                {current.bankTitle} · {current.card.level}
-              </p>
-              {!flipped ? (
-                <>
-                  <h3>{current.card.question[language]}</h3>
-                  <p className="hint">Tap để flip card.</p>
-                </>
-              ) : (
-                <>
-                  <h3>{current.card.answer[language]}</h3>
-                  <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
-                </>
-              )}
-            </article>
-          )}
+          <div className="learning-content">
+            {!current ? (
+              <p>Không có thẻ đến hạn. Hãy thêm topic hoặc ôn lại sau.</p>
+            ) : (
+              <article
+                className={`flashcard flashcard-full ${flipped ? 'flipped' : ''}`}
+                onClick={() => setFlipped((v) => !v)}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={() => void onPointerUp()}
+                style={{ transform: `translate(${dragOffset.x}px, ${dragOffset.y}px)` }}
+              >
+                <p className="meta">
+                  {current.bankTitle} · {current.card.level}
+                </p>
+                {!flipped ? (
+                  <>
+                    <h3>{current.card.question[language]}</h3>
+                    <p className="hint">Tap để flip card.</p>
+                  </>
+                ) : (
+                  <>
+                    <h3>{current.card.answer[language]}</h3>
+                    <p className="hint">Sau khi nhớ xong, swipe để chấm mức ghi nhớ.</p>
+                  </>
+                )}
+              </article>
+            )}
+          </div>
         </section>
       )}
 
