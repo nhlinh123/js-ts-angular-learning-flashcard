@@ -40,6 +40,15 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
+.install-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.install-panel h2 {
+  margin: 0;
+}
+
 .learning-screen {
   display: flex;
   flex-direction: column;
@@ -98,8 +107,9 @@ body {
   justify-content: center;
 }
 
-.flashcard.flipped {
-  border-color: rgba(10, 132, 255, 0.45);
+.answer {
+  margin: 0 0 12px;
+  line-height: 1.5;
 }
 
 .meta {
